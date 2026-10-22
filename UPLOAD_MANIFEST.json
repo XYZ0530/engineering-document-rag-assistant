@@ -5,7 +5,7 @@
   "LEARNING_CHECKPOINTS.md": "593074bdbd300d4b2a880e960ddd6a3b1eb488267469a3019f32f53eb6f477f5",
   "PROJECT_PLAN.md": "d63f7467aa5304a977a0a6655caf3e11834c58ab7fc303576af07c06d69a57c2",
   "PROJECT_ROADMAP.md": "aee11e4f9638a00f17255366e156918afed28c0ca4a8a4d28b8690717b7356e1",
-  "README.md": "73e54379a56d75c04036a128898719f10ee76938f2aeef743aad62a453ce70ab",
+  "README.md": "412e81154b9843305a8692690219eef04c535cf4614aade5a48aa695b5891e24",
   "requirements-observed.txt": "afe21f2feceacded3eaab6f440bbafc85755cf533ef220933468ea4839be18fb",
   "requirements.txt": "8d2d04c595cb8e31a2fd5cd9bae42fd01cd6ad73d7a551f3c14f748f5a5bd0a1",
   "SOURCES.md": "c8f42d8afb08aa25cb9bc8297ece981a9d73339cdbcc585b592dc40a28f5f05e",
@@ -39,5 +39,9 @@
   "src/embed_retrieve.py": "1414acdd842624e3bbad53a4450fee96ddf75aa2fad73a0c33d211f28023b74c",
   "src/evaluate_rag.py": "e73fd18530d631070e696f37e8d9f493a6aab7142378a65eeb038972349cb606",
   "src/extract_text.py": "0ad39ed5d4b0d6fa10880b5985e5c3e4c75e4cd8271173f8d6d796cdaffe26f1",
-  "src/rag_generate.py": "8fd2941fa9b9d39b514a8f0332132e71a9a605371c71f5db6fdaa70874f1f120"
+  "src/rag_generate.py": "8fd2941fa9b9d39b514a8f0332132e71a9a605371c71f5db6fdaa70874f1f120",
+  "assets/visuals/architecture-dark.svg": "08a45b22231860cf2f63d1100745ab384e3d741b0eb61075a4a817940eb760db",
+  "assets/visuals/architecture-light.svg": "a01f70c422f4d0ce905cc94d81d09e0af07db5ffc0476afce541868f0c53fa8b",
+  "assets/visuals/recorded-trace-dark.svg": "bc42e63ff039e16950252e5919210af5c5748d0a5d2818aced61ad3e4ca3425f",
+  "assets/visuals/recorded-trace-light.svg": "d660a9148f73a4149c11d3b9d5d93445a3ef67b2bafe5a3a85625b8a3c666c57"
 }

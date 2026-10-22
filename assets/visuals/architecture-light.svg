@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="svgTitle svgDesc">
+<title id="svgTitle">Engineering Document RAG Assistant visual</title><desc id="svgDesc">Architectural explanation of the documented learning prototype. Textual details also appear in the GitHub README.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#9BB2AB" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"/></marker><marker id="arrowgreen" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#087D65" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+<rect x="0" y="0" width="1600" height="1000" rx="0" fill="#F8FAF9"/>
+<text x="52" y="67" fill="#087D65" font-size="16" font-weight="750" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start" letter-spacing="2.5">THE SYSTEM</text>
+<text x="52" y="122" fill="#19332F" font-size="38" font-weight="720" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">From engineering reports to a grounded answer</text>
+<text x="52" y="160" fill="#60726F" font-size="21" font-weight="400" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">The document index is prepared separately; each question reuses its saved vectors and source metadata.</text>
+<rect x="40" y="192" width="1520" height="314" rx="22" fill="#FFFFFF" stroke="#DCE6E2" stroke-width="1"/>
+<rect x="65" y="213" width="188" height="31" rx="16" fill="#E8F5EF"/>
+<text x="159.0" y="234" fill="#087D65" font-size="15" font-weight="650" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="middle">01  INDEX THE CORPUS</text>
+<text x="277" y="235" fill="#60726F" font-size="18" font-weight="400" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">Offline preparation / rebuild only</text>
+<rect x="60" y="274" width="278" height="198" rx="16" fill="#FFFFFF" stroke="#DCE6E2" stroke-width="1"/>
+<rect x="77" y="292" width="45" height="31" rx="16" fill="#EDF3FB"/>
+<text x="99.5" y="313" fill="#3365A6" font-size="14" font-weight="650" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="middle">A1</text>
+<text x="78" y="358" fill="#19332F" font-size="23" font-weight="690" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">Source documents</text>
+<text x="78" y="391" fill="#60726F" font-size="18" font-weight="430" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">Three NIST reports</text>
+<text x="78" y="419" fill="#60726F" font-size="18" font-weight="430" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">163 original pages</text>
+<text x="78" y="454" fill="#087D65" font-size="15" font-weight="590" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">extract_text.py</text>
+<line x1="343" y1="371" x2="357" y2="371" stroke="#9BB2AB" stroke-width="2.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="365" y="274" width="278" height="198" rx="16" fill="#FFFFFF" stroke="#DCE6E2" stroke-width="1"/>
+<rect x="382" y="292" width="45" height="31" rx="16" fill="#EDF3FB"/>
+<text x="404.5" y="313" fill="#3365A6" font-size="14" font-weight="650" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="middle">A2</text>
+<text x="383" y="358" fill="#19332F" font-size="23" font-weight="690" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">Extract and clean</text>
+<text x="383" y="391" fill="#60726F" font-size="18" font-weight="430" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">159 retained pages</text>
+<text x="383" y="419" fill="#60726F" font-size="18" font-weight="430" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">PDF page preserved</text>
+<text x="383" y="454" fill="#087D65" font-size="15" font-weight="590" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">extract_text.py</text>
+<line x1="648" y1="371" x2="662" y2="371" stroke="#9BB2AB" stroke-width="2.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="670" y="274" width="278" height="198" rx="16" fill="#FFFFFF" stroke="#DCE6E2" stroke-width="1"/>
+<rect x="687" y="292" width="45" height="31" rx="16" fill="#EDF3FB"/>
+<text x="709.5" y="313" fill="#3365A6" font-size="14" font-weight="650" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="middle">A3</text>
+<text x="688" y="358" fill="#19332F" font-size="23" font-weight="690" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">Token-aware chunks</text>
+<text x="688" y="391" fill="#60726F" font-size="18" font-weight="430" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">128/24: 972 chunks</text>
+<text x="688" y="419" fill="#60726F" font-size="18" font-weight="430" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">220/40: 544 chunks</text>
+<text x="688" y="454" fill="#087D65" font-size="15" font-weight="590" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">chunk_text.py</text>
+<line x1="953" y1="371" x2="967" y2="371" stroke="#9BB2AB" stroke-width="2.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="975" y="274" width="278" height="198" rx="16" fill="#FFFFFF" stroke="#DCE6E2" stroke-width="1"/>
+<rect x="992" y="292" width="45" height="31" rx="16" fill="#EDF3FB"/>
+<text x="1014.5" y="313" fill="#3365A6" font-size="14" font-weight="650" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="middle">A4</text>
+<text x="993" y="358" fill="#19332F" font-size="23" font-weight="690" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">MiniLM embeddings</text>
+<text x="993" y="391" fill="#60726F" font-size="18" font-weight="430" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">One vector per chunk</text>
+<text x="993" y="419" fill="#60726F" font-size="18" font-weight="430" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">384D · normalized</text>
+<text x="993" y="454" fill="#087D65" font-size="15" font-weight="590" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">embed_retrieve.py</text>
+<line x1="1258" y1="371" x2="1272" y2="371" stroke="#9BB2AB" stroke-width="2.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="1280" y="274" width="278" height="198" rx="16" fill="#FFFFFF" stroke="#DCE6E2" stroke-width="1"/>
+<rect x="1297" y="292" width="45" height="31" rx="16" fill="#EDF3FB"/>
+<text x="1319.5" y="313" fill="#3365A6" font-size="14" font-weight="650" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="middle">A5</text>
+<text x="1298" y="358" fill="#19332F" font-size="23" font-weight="690" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">Saved artifacts</text>
+<text x="1298" y="391" fill="#60726F" font-size="18" font-weight="430" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">Chunk JSONL + .npy</text>
+<text x="1298" y="419" fill="#60726F" font-size="18" font-weight="430" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">Manifests track hashes</text>
+<text x="1298" y="454" fill="#087D65" font-size="15" font-weight="590" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">embed_retrieve.py</text>
+<line x1="1352" y1="472" x2="1352" y2="537" stroke="#087D65" stroke-width="2.8" stroke-linecap="round"/>
+<line x1="1352" y1="537" x2="586" y2="537" stroke="#087D65" stroke-width="2.8" stroke-linecap="round"/>
+<line x1="586" y1="537" x2="586" y2="632" stroke="#087D65" stroke-width="2.8" stroke-linecap="round" marker-end="url(#arrowgreen)"/>
+<rect x="815" y="518" width="314" height="37" rx="17" fill="#E8F5EF"/>
+<text x="972" y="544" fill="#087D65" font-size="17" font-weight="610" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="middle">reuse stored vectors + chunks</text>
+<rect x="40" y="560" width="1520" height="360" rx="22" fill="#FFFFFF" stroke="#DCE6E2" stroke-width="1"/>
+<rect x="65" y="582" width="194" height="31" rx="16" fill="#EDF3FB"/>
+<text x="162.0" y="603" fill="#3365A6" font-size="15" font-weight="650" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="middle">02  ANSWER A QUESTION</text>
+<text x="283" y="603" fill="#60726F" font-size="18" font-weight="400" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">Per question / grounded mode</text>
+<rect x="57" y="640" width="202" height="181" rx="14" fill="#FFFFFF" stroke="#DCE6E2" stroke-width="1"/>
+<rect x="70" y="653" width="43" height="31" rx="16" fill="#EDF3FB"/>
+<text x="91.5" y="674" fill="#3365A6" font-size="14" font-weight="650" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="middle">B1</text>
+<text x="70" y="712" fill="#19332F" font-size="19" font-weight="695" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">User question</text>
+<text x="70" y="742" fill="#60726F" font-size="15.3" font-weight="440" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">Plain text input</text>
+<text x="70" y="767" fill="#60726F" font-size="15.3" font-weight="440" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">No chat memory</text>
+<text x="70" y="806" fill="#087D65" font-size="13" font-weight="580" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">rag_generate.py</text>
+<line x1="262" y1="731" x2="266" y2="731" stroke="#9BB2AB" stroke-width="1.8" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="271" y="640" width="202" height="181" rx="14" fill="#FFFFFF" stroke="#DCE6E2" stroke-width="1"/>
+<rect x="284" y="653" width="43" height="31" rx="16" fill="#EDF3FB"/>
+<text x="305.5" y="674" fill="#3365A6" font-size="14" font-weight="650" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="middle">B2</text>
+<text x="284" y="712" fill="#19332F" font-size="19" font-weight="695" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">Query embedding</text>
+<text x="284" y="742" fill="#60726F" font-size="15.3" font-weight="440" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">Same MiniLM model</text>
+<text x="284" y="767" fill="#60726F" font-size="15.3" font-weight="440" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">384D · normalized</text>
+<text x="284" y="806" fill="#087D65" font-size="13" font-weight="580" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">embed_retrieve.py</text>
+<line x1="476" y1="731" x2="480" y2="731" stroke="#9BB2AB" stroke-width="1.8" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="485" y="640" width="202" height="181" rx="14" fill="#FFFFFF" stroke="#DCE6E2" stroke-width="1"/>
+<rect x="498" y="653" width="43" height="31" rx="16" fill="#EDF3FB"/>
+<text x="519.5" y="674" fill="#3365A6" font-size="14" font-weight="650" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="middle">B3</text>
+<text x="498" y="712" fill="#19332F" font-size="19" font-weight="695" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">Cosine ranking</text>
+<text x="498" y="742" fill="#60726F" font-size="15.3" font-weight="440" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">Exact NumPy dot product</text>
+<text x="498" y="767" fill="#60726F" font-size="15.3" font-weight="440" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">Retrieve Top-3</text>
+<text x="498" y="806" fill="#087D65" font-size="13" font-weight="580" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">embed_retrieve.py</text>
+<line x1="690" y1="731" x2="694" y2="731" stroke="#9BB2AB" stroke-width="1.8" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="699" y="640" width="202" height="181" rx="14" fill="#FFFFFF" stroke="#DCE6E2" stroke-width="1"/>
+<rect x="712" y="653" width="43" height="31" rx="16" fill="#EDF3FB"/>
+<text x="733.5" y="674" fill="#3365A6" font-size="14" font-weight="650" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="middle">B4</text>
+<text x="712" y="712" fill="#19332F" font-size="19" font-weight="695" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">Evidence gate</text>
+<text x="712" y="742" fill="#60726F" font-size="15.3" font-weight="440" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">Top-1 score ≥ 0.58</text>
+<text x="712" y="767" fill="#60726F" font-size="15.3" font-weight="440" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">Pass / reject</text>
+<text x="712" y="806" fill="#087D65" font-size="13" font-weight="580" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">rag_generate.py</text>
+<line x1="904" y1="731" x2="908" y2="731" stroke="#9BB2AB" stroke-width="1.8" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="913" y="640" width="202" height="181" rx="14" fill="#FFFFFF" stroke="#DCE6E2" stroke-width="1"/>
+<rect x="926" y="653" width="43" height="31" rx="16" fill="#EDF3FB"/>
+<text x="947.5" y="674" fill="#3365A6" font-size="14" font-weight="650" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="middle">B5</text>
+<text x="926" y="712" fill="#19332F" font-size="19" font-weight="695" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">Build context</text>
+<text x="926" y="742" fill="#60726F" font-size="15.3" font-weight="440" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">Complete ranked chunks</text>
+<text x="926" y="767" fill="#60726F" font-size="15.3" font-weight="440" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">Qwen chat token budget</text>
+<text x="926" y="806" fill="#087D65" font-size="13" font-weight="580" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">rag_generate.py</text>
+<line x1="1118" y1="731" x2="1122" y2="731" stroke="#9BB2AB" stroke-width="1.8" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="1127" y="640" width="202" height="181" rx="14" fill="#FFFFFF" stroke="#DCE6E2" stroke-width="1"/>
+<rect x="1140" y="653" width="43" height="31" rx="16" fill="#EDF3FB"/>
+<text x="1161.5" y="674" fill="#3365A6" font-size="14" font-weight="650" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="middle">B6</text>
+<text x="1140" y="712" fill="#19332F" font-size="19" font-weight="695" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">Local Qwen</text>
+<text x="1140" y="742" fill="#60726F" font-size="15.3" font-weight="440" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">Qwen2.5-0.5B</text>
+<text x="1140" y="767" fill="#60726F" font-size="15.3" font-weight="440" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">Greedy · max 96 tokens</text>
+<text x="1140" y="806" fill="#087D65" font-size="13" font-weight="580" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">rag_generate.py</text>
+<line x1="1332" y1="731" x2="1336" y2="731" stroke="#9BB2AB" stroke-width="1.8" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="1341" y="640" width="202" height="181" rx="14" fill="#FFFFFF" stroke="#DCE6E2" stroke-width="1"/>
+<rect x="1354" y="653" width="43" height="31" rx="16" fill="#EDF3FB"/>
+<text x="1375.5" y="674" fill="#3365A6" font-size="14" font-weight="650" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="middle">B7</text>
+<text x="1354" y="712" fill="#19332F" font-size="19" font-weight="695" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">Answer + pages</text>
+<text x="1354" y="742" fill="#60726F" font-size="15.3" font-weight="440" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">Raw generated answer</text>
+<text x="1354" y="767" fill="#60726F" font-size="15.3" font-weight="440" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">Prompt-page provenance</text>
+<text x="1354" y="806" fill="#087D65" font-size="13" font-weight="580" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">rag_generate.py</text>
+<line x1="800.0" y1="821" x2="800.0" y2="851" stroke="#AA544A" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 5"/>
+<rect x="644.0" y="850" width="312" height="44" rx="11" fill="#FDF0EB"/>
+<text x="800.0" y="878" fill="#AA544A" font-size="16" font-weight="620" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="middle">Reject → INSUFFICIENT EVIDENCE</text>
+<text x="52" y="962" fill="#19332F" font-size="18" font-weight="720" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">Accuracy note:</text>
+<text x="200" y="962" fill="#60726F" font-size="18" font-weight="450" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-anchor="start">Similarity is not confidence. Page lists show provided sources, not verified claim-level citations.</text>
+</svg>

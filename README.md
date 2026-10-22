@@ -10,6 +10,19 @@ A **self-directed learning prototype** that answers general manufacturing-mainte
 
 Prepare the document index first; reuse it when answering questions.
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/visuals/architecture-dark.svg">
+  <img src="assets/visuals/architecture-light.svg" alt="RAG architecture: offline PDF extraction, cleaning, chunking and MiniLM embeddings create a saved index; each question uses MiniLM cosine retrieval, a similarity gate, budgeted Qwen context and generation, then source-page provenance, or insufficient evidence." width="1600">
+</picture>
+
+[Full-resolution light SVG](assets/visuals/architecture-light.svg) · [Full-resolution dark SVG](assets/visuals/architecture-dark.svg)
+
+[PDF extraction](src/extract_text.py) · [Chunking](src/chunk_text.py) · [Retrieval](src/embed_retrieve.py) · [Generation](src/rag_generate.py) · [Notebook walkthrough](notebooks/06_end_to_end_rag_query_walkthrough.ipynb)
+
+
+<details>
+<summary>View original Mermaid flowchart</summary>
+
 ```mermaid
 flowchart TB
     subgraph INDEX["1. Document indexing"]
@@ -34,6 +47,8 @@ flowchart TB
     INDEX -->|Saved index used in retrieval| QA
 ```
 
+</details>
+
 **Indexing:** 163 original PDF pages → 159 retained page records → 972 chunks at 128 tokens or 544 at 220 tokens → normalized 384-dimensional vectors. The examples use the 128-token corpus. [Source documents](SOURCES.md) · [Saved data](data/)
 
 **Answering:** the same MiniLM model embeds each question. Grounded mode checks the highest retrieval score before building the Qwen prompt. The current default threshold is **0.58**; the historical four-configuration experiment used **0.45**. Basic prompts bypass this gate. Similarity is not a probability.
@@ -43,6 +58,21 @@ Displayed pages identify the evidence supplied to the generator. They do **not**
 ## Recorded example
 
 **Saved notebook 06 walkthrough · grounded Top-3 · 128-token chunks · gate 0.58 · local Qwen**
+
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/visuals/recorded-trace-dark.svg">
+  <img src="assets/visuals/recorded-trace-light.svg" alt="Static saved notebook 06 walkthrough: cosine scores 0.806, 0.689 and 0.657; top score passes 0.58; three chunks form a 321-token chat-formatted Qwen input; 36 generated tokens are followed by three provenance pages." width="1600">
+</picture>
+
+[Full-resolution light SVG](assets/visuals/recorded-trace-light.svg) · [Full-resolution dark SVG](assets/visuals/recorded-trace-dark.svg)
+
+[Recorded notebook](notebooks/06_end_to_end_rag_query_walkthrough.ipynb) · [Retrieval code](src/embed_retrieve.py) · [Prompt and generation code](src/rag_generate.py)
+
+Static recorded evidence, not a live or newly executed demo. Historical Q06 at **0.45** contains the same answer. The page list records supplied context, not claim-verified citations; the answer omits avoiding catastrophic failure.
+
+<details>
+<summary>Inspect the recorded passages, exact prompt, answer and provenance</summary>
 
 > **User**
 >
@@ -128,6 +158,8 @@ Retrieved sources:
 The answer, 321-token input, and source pages also match Q06 in the [historical experiment](evaluation/rag_experiment_results.json), whose recorded threshold is **0.45**. The top score exceeds both thresholds; the gate does not alter the prompt after passing, so matching output is consistent with greedy generation.
 
 This example is labelled by the notebook's saved 0.58 sequence. It is **not a newly executed 0.58 result**, a new quality experiment, or proof that raising the threshold improved this answer. Saved cells and execution counts cannot independently certify execution history. No generation was rerun for this presentation update.
+
+</details>
 
 </details>
 
