@@ -1,0 +1,2593 @@
+{
+  "minimum_evidence_score": 0.45,
+  "question_count": 13,
+  "configurations": [
+    {
+      "configuration": "basic_top3",
+      "prompt_style": "basic",
+      "top_k": 3
+    },
+    {
+      "configuration": "basic_top5",
+      "prompt_style": "basic",
+      "top_k": 5
+    },
+    {
+      "configuration": "grounded_top3",
+      "prompt_style": "grounded",
+      "top_k": 3
+    },
+    {
+      "configuration": "grounded_top5",
+      "prompt_style": "grounded",
+      "top_k": 5
+    }
+  ],
+  "summary": [
+    {
+      "configuration": "basic_top3",
+      "supported_questions": 10,
+      "mean_answer_point_coverage": 0.5499999999999999,
+      "all_answer_points_rate": 0.4,
+      "expected_source_rate": 0.9,
+      "unsupported_refusal_rate": 0.6666666666666666,
+      "evidence_gate_rate_unsupported": 0.0,
+      "llm_call_rate": 1.0,
+      "mean_input_tokens_when_called": 443.2307692307692,
+      "mean_latency_when_called": 11.845540523076824,
+      "total_generation_seconds": 153.9920267999987
+    },
+    {
+      "configuration": "basic_top5",
+      "supported_questions": 10,
+      "mean_answer_point_coverage": 0.55,
+      "all_answer_points_rate": 0.4,
+      "expected_source_rate": 0.9,
+      "unsupported_refusal_rate": 0.6666666666666666,
+      "evidence_gate_rate_unsupported": 0.0,
+      "llm_call_rate": 1.0,
+      "mean_input_tokens_when_called": 683.1538461538462,
+      "mean_latency_when_called": 12.705823546153765,
+      "total_generation_seconds": 165.17570609999893
+    },
+    {
+      "configuration": "grounded_top3",
+      "supported_questions": 10,
+      "mean_answer_point_coverage": 0.5833333333333333,
+      "all_answer_points_rate": 0.4,
+      "expected_source_rate": 0.9,
+      "unsupported_refusal_rate": 0.6666666666666666,
+      "evidence_gate_rate_unsupported": 0.6666666666666666,
+      "llm_call_rate": 0.8461538461538461,
+      "mean_input_tokens_when_called": 476.45454545454544,
+      "mean_latency_when_called": 8.121711363636098,
+      "total_generation_seconds": 89.33882499999709
+    },
+    {
+      "configuration": "grounded_top5",
+      "supported_questions": 10,
+      "mean_answer_point_coverage": 0.5499999999999999,
+      "all_answer_points_rate": 0.3,
+      "expected_source_rate": 0.9,
+      "unsupported_refusal_rate": 0.6666666666666666,
+      "evidence_gate_rate_unsupported": 0.6666666666666666,
+      "llm_call_rate": 0.8461538461538461,
+      "mean_input_tokens_when_called": 718.8181818181819,
+      "mean_latency_when_called": 8.030995736363614,
+      "total_generation_seconds": 88.34095309999975
+    }
+  ],
+  "rows": [
+    {
+      "configuration": "basic_top3",
+      "prompt_style": "basic",
+      "top_k": 3,
+      "question_id": "Q01",
+      "question": "How does reactive maintenance differ from preventive maintenance?",
+      "supported": true,
+      "top_similarity": 0.7775448560714722,
+      "evidence_gate_triggered": false,
+      "llm_called": true,
+      "answer": "Based on the information provided in the context, reactive maintenance differs from preventive maintenance in several key ways:\n\n1. **Cost**: Reactive maintenance is generally considered more expensive than preventive maintenance because it involves doing nothing until something breaks, fails, or stops operating within required specifications. This means that reactive maintenance requires significant upfront investment in resources such as personnel, tools, and infrastructure.\n\n2. **Safety**: Reactive maintenance is often criticized for its high risk of unsafe scenarios, which can have serious consequences\n\nRetrieved sources:\n1. NIST.AMS.100-34 \u2014 PDF page 47\n2. NIST.AMS.100-34 \u2014 PDF page 7\n3. NIST.AMS.100-34 \u2014 PDF page 14",
+      "raw_model_answer": "Based on the information provided in the context, reactive maintenance differs from preventive maintenance in several key ways:\n\n1. **Cost**: Reactive maintenance is generally considered more expensive than preventive maintenance because it involves doing nothing until something breaks, fails, or stops operating within required specifications. This means that reactive maintenance requires significant upfront investment in resources such as personnel, tools, and infrastructure.\n\n2. **Safety**: Reactive maintenance is often criticized for its high risk of unsafe scenarios, which can have serious consequences",
+      "answer_point_coverage": 0.0,
+      "answer_point_hits": [],
+      "answer_point_misses": [
+        "reactive occurs after breakdown or need for repair",
+        "preventive is scheduled in advance"
+      ],
+      "all_answer_points_hit": false,
+      "expected_source_present": true,
+      "refusal_detected": false,
+      "correct_unsupported_refusal": false,
+      "input_tokens": 488,
+      "sources_in_prompt": 3,
+      "unique_source_pages": 3,
+      "latency_seconds": 14.662584100000458,
+      "retrieved_sources": [
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 47,
+          "retrieval_rank": 1,
+          "retrieval_similarity": 0.7775448560714722
+        },
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 7,
+          "retrieval_rank": 2,
+          "retrieval_similarity": 0.7765377759933472
+        },
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 14,
+          "retrieval_rank": 3,
+          "retrieval_similarity": 0.7691890001296997
+        }
+      ]
+    },
+    {
+      "configuration": "basic_top3",
+      "prompt_style": "basic",
+      "top_k": 3,
+      "question_id": "Q02",
+      "question": "Which measurable units can be used to schedule preventive maintenance?",
+      "supported": true,
+      "top_similarity": 0.6771284937858582,
+      "evidence_gate_triggered": false,
+      "llm_called": true,
+      "answer": "Based on the information provided in the given text, the measurable units that can be used to schedule preventive maintenance include:\n\n1. Time\n2. Distance\n\nThese two units are mentioned directly in the context of the examples provided in the text. The text states that \"time in months or distance in miles (or kilometers)\" can be easily monitored as these are commonly used units to track the frequency of maintenance tasks.\n\nRetrieved sources:\n1. NIST.AMS.100-34 \u2014 PDF page 15\n2. NIST.AMS.100-18 \u2014 PDF page 10\n3. NIST.AMS.100-18 \u2014 PDF page 15",
+      "raw_model_answer": "Based on the information provided in the given text, the measurable units that can be used to schedule preventive maintenance include:\n\n1. Time\n2. Distance\n\nThese two units are mentioned directly in the context of the examples provided in the text. The text states that \"time in months or distance in miles (or kilometers)\" can be easily monitored as these are commonly used units to track the frequency of maintenance tasks.",
+      "answer_point_coverage": 0.6666666666666666,
+      "answer_point_hits": [
+        "time",
+        "distance"
+      ],
+      "answer_point_misses": [
+        "runtime or operating cycles"
+      ],
+      "all_answer_points_hit": false,
+      "expected_source_present": true,
+      "refusal_detected": false,
+      "correct_unsupported_refusal": false,
+      "input_tokens": 492,
+      "sources_in_prompt": 3,
+      "unique_source_pages": 3,
+      "latency_seconds": 12.697743500000797,
+      "retrieved_sources": [
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 15,
+          "retrieval_rank": 1,
+          "retrieval_similarity": 0.6771284937858582
+        },
+        {
+          "document": "NIST.AMS.100-18",
+          "pdf_page": 10,
+          "retrieval_rank": 2,
+          "retrieval_similarity": 0.6026455163955688
+        },
+        {
+          "document": "NIST.AMS.100-18",
+          "pdf_page": 15,
+          "retrieval_rank": 3,
+          "retrieval_similarity": 0.5845104455947876
+        }
+      ]
+    },
+    {
+      "configuration": "basic_top3",
+      "prompt_style": "basic",
+      "top_k": 3,
+      "question_id": "Q03",
+      "question": "What information is used to decide when predictive maintenance should be performed?",
+      "supported": true,
+      "top_similarity": 0.7772319912910461,
+      "evidence_gate_triggered": false,
+      "llm_called": true,
+      "answer": "According to the provided context, the key point that emerged from Jin et al's survey is that companies are considering predictive maintenance strategies. Specifically:\n\n1. **Identifying Successful Cases**: The survey indicates that \"A little more than a quarter of the respondents indicated that they were mostly using reactive maintenance techniques.\"\n\n2. **Identifying Failures**: A significant portion of respondents reported having both successes and failures in diagnosing and predicting equipment conditions.\n\n3. **Assessing Condition**: Companies\n\nRetrieved sources:\n1. NIST.AMS.100-18 \u2014 PDF page 20\n2. NIST.AMS.100-2 \u2014 PDF page 18",
+      "raw_model_answer": "According to the provided context, the key point that emerged from Jin et al's survey is that companies are considering predictive maintenance strategies. Specifically:\n\n1. **Identifying Successful Cases**: The survey indicates that \"A little more than a quarter of the respondents indicated that they were mostly using reactive maintenance techniques.\"\n\n2. **Identifying Failures**: A significant portion of respondents reported having both successes and failures in diagnosing and predicting equipment conditions.\n\n3. **Assessing Condition**: Companies",
+      "answer_point_coverage": 0.5,
+      "answer_point_hits": [
+        "reliability or condition measurements"
+      ],
+      "answer_point_misses": [
+        "sensor and historical data or models"
+      ],
+      "all_answer_points_hit": false,
+      "expected_source_present": true,
+      "refusal_detected": false,
+      "correct_unsupported_refusal": false,
+      "input_tokens": 458,
+      "sources_in_prompt": 3,
+      "unique_source_pages": 2,
+      "latency_seconds": 14.398227800000313,
+      "retrieved_sources": [
+        {
+          "document": "NIST.AMS.100-18",
+          "pdf_page": 20,
+          "retrieval_rank": 1,
+          "retrieval_similarity": 0.7772319912910461
+        },
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 18,
+          "retrieval_rank": 3,
+          "retrieval_similarity": 0.748634934425354
+        }
+      ]
+    },
+    {
+      "configuration": "basic_top3",
+      "prompt_style": "basic",
+      "top_k": 3,
+      "question_id": "Q04",
+      "question": "What is a disadvantage of performing excessive preventive maintenance?",
+      "supported": true,
+      "top_similarity": 0.6573714017868042,
+      "evidence_gate_triggered": false,
+      "llm_called": true,
+      "answer": "Based on the information provided in the given text, an advantage of performing excessive preventive maintenance is that it can reduce downtime, defect rates, and inventory increases due to maintenance issues. However, there are also potential disadvantages to consider:\n\n1. **Increased Downtime**: Excessive preventive maintenance can lead to increased downtime for equipment or systems, which may result in reduced productivity and operational efficiency.\n\n2. **Defect Rate**: While preventive maintenance can help prevent many defects from occurring, it\n\nRetrieved sources:\n1. NIST.AMS.100-34 \u2014 PDF page 5\n2. NIST.AMS.100-34 \u2014 PDF page 13\n3. NIST.AMS.100-34 \u2014 PDF page 46",
+      "raw_model_answer": "Based on the information provided in the given text, an advantage of performing excessive preventive maintenance is that it can reduce downtime, defect rates, and inventory increases due to maintenance issues. However, there are also potential disadvantages to consider:\n\n1. **Increased Downtime**: Excessive preventive maintenance can lead to increased downtime for equipment or systems, which may result in reduced productivity and operational efficiency.\n\n2. **Defect Rate**: While preventive maintenance can help prevent many defects from occurring, it",
+      "answer_point_coverage": 0.0,
+      "answer_point_hits": [],
+      "answer_point_misses": [
+        "unnecessary labor or material cost",
+        "planned maintenance still creates downtime"
+      ],
+      "all_answer_points_hit": false,
+      "expected_source_present": false,
+      "refusal_detected": false,
+      "correct_unsupported_refusal": false,
+      "input_tokens": 302,
+      "sources_in_prompt": 3,
+      "unique_source_pages": 3,
+      "latency_seconds": 13.96124779999991,
+      "retrieved_sources": [
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 5,
+          "retrieval_rank": 1,
+          "retrieval_similarity": 0.6573714017868042
+        },
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 13,
+          "retrieval_rank": 2,
+          "retrieval_similarity": 0.6526138186454773
+        },
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 46,
+          "retrieval_rank": 3,
+          "retrieval_similarity": 0.6391851305961609
+        }
+      ]
+    },
+    {
+      "configuration": "basic_top3",
+      "prompt_style": "basic",
+      "top_k": 3,
+      "question_id": "Q05",
+      "question": "What performance characteristics are near-term goals for PHM performance assessment?",
+      "supported": true,
+      "top_similarity": 0.755857527256012,
+      "evidence_gate_triggered": false,
+      "llm_called": true,
+      "answer": "Near-term goals for PHM performance assessment focus on evaluation of PHM as well as incorporating the key performance characteristics that are critical to manufacturing, including failure prediction/recovery, defect reduction, and early detection of events.\n\nRetrieved sources:\n1. NIST.AMS.100-2 \u2014 PDF page 33\n2. NIST.AMS.100-2 \u2014 PDF page 32",
+      "raw_model_answer": "Near-term goals for PHM performance assessment focus on evaluation of PHM as well as incorporating the key performance characteristics that are critical to manufacturing, including failure prediction/recovery, defect reduction, and early detection of events.",
+      "answer_point_coverage": 1.0,
+      "answer_point_hits": [
+        "failure prediction or recovery",
+        "defect reduction",
+        "early event or anomaly detection"
+      ],
+      "answer_point_misses": [],
+      "all_answer_points_hit": true,
+      "expected_source_present": true,
+      "refusal_detected": false,
+      "correct_unsupported_refusal": false,
+      "input_tokens": 491,
+      "sources_in_prompt": 3,
+      "unique_source_pages": 2,
+      "latency_seconds": 7.584016999999221,
+      "retrieved_sources": [
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 33,
+          "retrieval_rank": 1,
+          "retrieval_similarity": 0.755857527256012
+        },
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 32,
+          "retrieval_rank": 2,
+          "retrieval_similarity": 0.7270911335945129
+        }
+      ]
+    },
+    {
+      "configuration": "basic_top3",
+      "prompt_style": "basic",
+      "top_k": 3,
+      "question_id": "Q06",
+      "question": "What safety and maintainability benefits are associated with prognostics and health management?",
+      "supported": true,
+      "top_similarity": 0.8059178590774536,
+      "evidence_gate_triggered": false,
+      "llm_called": true,
+      "answer": "Based on the provided information, the safety and maintainability benefits associated with prognostics and health management are:\n\nSafety: Advise against catastrophic failures and prevent them from occurring.\nMaintainability: Eliminate redundant inspections, minimize unscheduled maintenance, and reduce the need for additional test equipment.\n\nThese benefits are highlighted in the first two bullet points of the evidence provided, specifically in S1 and S2. The second bullet point emphasizes that these benefits can lead to significant advantages such as\n\nRetrieved sources:\n1. NIST.AMS.100-18 \u2014 PDF page 17\n2. NIST.AMS.100-2 \u2014 PDF page 7\n3. NIST.AMS.100-2 \u2014 PDF page 10",
+      "raw_model_answer": "Based on the provided information, the safety and maintainability benefits associated with prognostics and health management are:\n\nSafety: Advise against catastrophic failures and prevent them from occurring.\nMaintainability: Eliminate redundant inspections, minimize unscheduled maintenance, and reduce the need for additional test equipment.\n\nThese benefits are highlighted in the first two bullet points of the evidence provided, specifically in S1 and S2. The second bullet point emphasizes that these benefits can lead to significant advantages such as",
+      "answer_point_coverage": 1.0,
+      "answer_point_hits": [
+        "advance warning and avoiding catastrophic failure",
+        "reduced inspection or unscheduled maintenance"
+      ],
+      "answer_point_misses": [],
+      "all_answer_points_hit": true,
+      "expected_source_present": true,
+      "refusal_detected": false,
+      "correct_unsupported_refusal": false,
+      "input_tokens": 287,
+      "sources_in_prompt": 3,
+      "unique_source_pages": 3,
+      "latency_seconds": 13.601857999999993,
+      "retrieved_sources": [
+        {
+          "document": "NIST.AMS.100-18",
+          "pdf_page": 17,
+          "retrieval_rank": 1,
+          "retrieval_similarity": 0.8059178590774536
+        },
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 7,
+          "retrieval_rank": 2,
+          "retrieval_similarity": 0.6886851787567139
+        },
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 10,
+          "retrieval_rank": 3,
+          "retrieval_similarity": 0.6573432087898254
+        }
+      ]
+    },
+    {
+      "configuration": "basic_top3",
+      "prompt_style": "basic",
+      "top_k": 3,
+      "question_id": "Q07",
+      "question": "What are cascading effects in direct maintenance and repair costs?",
+      "supported": true,
+      "top_similarity": 0.7740808129310608,
+      "evidence_gate_triggered": false,
+      "llm_called": true,
+      "answer": "Cascading effects refer to subsequent damage caused by a breakdown of a machine (e.g., repair).\n\nRetrieved sources:\n1. NIST.AMS.100-34 \u2014 PDF page 22\n2. NIST.AMS.100-18 \u2014 PDF page 8\n3. NIST.AMS.100-18 \u2014 PDF page 25",
+      "raw_model_answer": "Cascading effects refer to subsequent damage caused by a breakdown of a machine (e.g., repair).",
+      "answer_point_coverage": 1.0,
+      "answer_point_hits": [
+        "subsequent damage caused by machine breakdown"
+      ],
+      "answer_point_misses": [],
+      "all_answer_points_hit": true,
+      "expected_source_present": true,
+      "refusal_detected": false,
+      "correct_unsupported_refusal": false,
+      "input_tokens": 481,
+      "sources_in_prompt": 3,
+      "unique_source_pages": 3,
+      "latency_seconds": 4.621418200000335,
+      "retrieved_sources": [
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 22,
+          "retrieval_rank": 1,
+          "retrieval_similarity": 0.7740808129310608
+        },
+        {
+          "document": "NIST.AMS.100-18",
+          "pdf_page": 8,
+          "retrieval_rank": 2,
+          "retrieval_similarity": 0.7584308981895447
+        },
+        {
+          "document": "NIST.AMS.100-18",
+          "pdf_page": 25,
+          "retrieval_rank": 3,
+          "retrieval_similarity": 0.7492192387580872
+        }
+      ]
+    },
+    {
+      "configuration": "basic_top3",
+      "prompt_style": "basic",
+      "top_k": 3,
+      "question_id": "Q08",
+      "question": "How does condition-based maintenance with prognostics use health information?",
+      "supported": true,
+      "top_similarity": 0.7375563383102417,
+      "evidence_gate_triggered": false,
+      "llm_called": true,
+      "answer": "Condition-based maintenance with prognostics uses health information to predict a failure evolution. This approach involves utilizing the assessed health or diagnostic fault classifier output to predict a failure evolution.\n\nRetrieved sources:\n1. NIST.AMS.100-18 \u2014 PDF page 17\n2. NIST.AMS.100-2 \u2014 PDF page 16",
+      "raw_model_answer": "Condition-based maintenance with prognostics uses health information to predict a failure evolution. This approach involves utilizing the assessed health or diagnostic fault classifier output to predict a failure evolution.",
+      "answer_point_coverage": 1.0,
+      "answer_point_hits": [
+        "uses assessed health or diagnostic output",
+        "predicts failure evolution"
+      ],
+      "answer_point_misses": [],
+      "all_answer_points_hit": true,
+      "expected_source_present": true,
+      "refusal_detected": false,
+      "correct_unsupported_refusal": false,
+      "input_tokens": 484,
+      "sources_in_prompt": 3,
+      "unique_source_pages": 2,
+      "latency_seconds": 6.465452000000369,
+      "retrieved_sources": [
+        {
+          "document": "NIST.AMS.100-18",
+          "pdf_page": 17,
+          "retrieval_rank": 1,
+          "retrieval_similarity": 0.7375563383102417
+        },
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 16,
+          "retrieval_rank": 3,
+          "retrieval_similarity": 0.7192909717559814
+        }
+      ]
+    },
+    {
+      "configuration": "basic_top3",
+      "prompt_style": "basic",
+      "top_k": 3,
+      "question_id": "Q09",
+      "question": "Why is measuring return on investment for PHM challenging?",
+      "supported": true,
+      "top_similarity": 0.6780706644058228,
+      "evidence_gate_triggered": false,
+      "llm_called": true,
+      "answer": "Measuring the return on investment (ROI) for PHM is challenging because:\n\n1. **Lack of Reliable Quantitative Methods**: The current lack of reliable quantitative methods for assessing the ROI of PHM investments makes it difficult to accurately measure its effectiveness.\n\n2. **Inadequate Data Availability**: There is currently insufficient data available to accurately assess the ROI of PHM investments. This limits the ability to make informed decisions about whether to invest in this technology.\n\n3. **Limited\n\nRetrieved sources:\n1. NIST.AMS.100-2 \u2014 PDF page 56\n2. NIST.AMS.100-18 \u2014 PDF page 43",
+      "raw_model_answer": "Measuring the return on investment (ROI) for PHM is challenging because:\n\n1. **Lack of Reliable Quantitative Methods**: The current lack of reliable quantitative methods for assessing the ROI of PHM investments makes it difficult to accurately measure its effectiveness.\n\n2. **Inadequate Data Availability**: There is currently insufficient data available to accurately assess the ROI of PHM investments. This limits the ability to make informed decisions about whether to invest in this technology.\n\n3. **Limited",
+      "answer_point_coverage": 0.3333333333333333,
+      "answer_point_hits": [
+        "limitations in models data methods or metrics"
+      ],
+      "answer_point_misses": [
+        "no standard or reliable ROI method",
+        "benefits may require equipment life cycles to measure"
+      ],
+      "all_answer_points_hit": false,
+      "expected_source_present": true,
+      "refusal_detected": false,
+      "correct_unsupported_refusal": false,
+      "input_tokens": 484,
+      "sources_in_prompt": 3,
+      "unique_source_pages": 2,
+      "latency_seconds": 14.539346400000795,
+      "retrieved_sources": [
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 56,
+          "retrieval_rank": 1,
+          "retrieval_similarity": 0.6780706644058228
+        },
+        {
+          "document": "NIST.AMS.100-18",
+          "pdf_page": 43,
+          "retrieval_rank": 2,
+          "retrieval_similarity": 0.6095651388168335
+        }
+      ]
+    },
+    {
+      "configuration": "basic_top3",
+      "prompt_style": "basic",
+      "top_k": 3,
+      "question_id": "Q10",
+      "question": "How do the labor and parts cost characteristics of reactive and predictive maintenance compare?",
+      "supported": true,
+      "top_similarity": 0.7547684907913208,
+      "evidence_gate_triggered": false,
+      "llm_called": true,
+      "answer": "Based on the information provided in the context, the labor and parts cost characteristics of reactive and predictive maintenance can be compared as follows:\n\n### Reactive Maintenance:\n- **Labor Cost**: High\n- **Parts Cost**: Not specified but generally higher than predictive maintenance\n\n### Predictive Maintenance:\n- **Labor Cost**: Low\n- **Parts Cost**: Medium to high, depending on specific implementation details\n\n### Summary:\n- **Labor Cost**: Reactive maintenance has a higher labor cost compared to predictive\n\nRetrieved sources:\n1. NIST.AMS.100-34 \u2014 PDF page 7\n2. NIST.AMS.100-34 \u2014 PDF page 43\n3. NIST.AMS.100-18 \u2014 PDF page 15",
+      "raw_model_answer": "Based on the information provided in the context, the labor and parts cost characteristics of reactive and predictive maintenance can be compared as follows:\n\n### Reactive Maintenance:\n- **Labor Cost**: High\n- **Parts Cost**: Not specified but generally higher than predictive maintenance\n\n### Predictive Maintenance:\n- **Labor Cost**: Low\n- **Parts Cost**: Medium to high, depending on specific implementation details\n\n### Summary:\n- **Labor Cost**: Reactive maintenance has a higher labor cost compared to predictive",
+      "answer_point_coverage": 0.0,
+      "answer_point_hits": [],
+      "answer_point_misses": [
+        "reactive has high labor and parts costs",
+        "predictive has low labor and medium parts costs"
+      ],
+      "all_answer_points_hit": false,
+      "expected_source_present": true,
+      "refusal_detected": false,
+      "correct_unsupported_refusal": false,
+      "input_tokens": 446,
+      "sources_in_prompt": 3,
+      "unique_source_pages": 3,
+      "latency_seconds": 16.338036699999066,
+      "retrieved_sources": [
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 7,
+          "retrieval_rank": 1,
+          "retrieval_similarity": 0.7547684907913208
+        },
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 43,
+          "retrieval_rank": 2,
+          "retrieval_similarity": 0.7504749298095703
+        },
+        {
+          "document": "NIST.AMS.100-18",
+          "pdf_page": 15,
+          "retrieval_rank": 3,
+          "retrieval_similarity": 0.7383952140808105
+        }
+      ]
+    },
+    {
+      "configuration": "basic_top3",
+      "prompt_style": "basic",
+      "top_k": 3,
+      "question_id": "U01",
+      "question": "What lubricant viscosity should be used for a Sandisk assembly machine?",
+      "supported": false,
+      "top_similarity": 0.3362870216369629,
+      "evidence_gate_triggered": false,
+      "llm_called": true,
+      "answer": "Based on the information provided in the given text, there is no specific mention of lubricant viscosity for a Sandisk assembly machine. The text does not provide any details about the viscosity requirements for such a machine. Therefore, I cannot answer the question with certainty based solely on the information given.\n\nRetrieved sources:\n1. NIST.AMS.100-2 \u2014 PDF page 22\n2. NIST.AMS.100-34 \u2014 PDF page 3\n3. NIST.AMS.100-34 \u2014 PDF page 16",
+      "raw_model_answer": "Based on the information provided in the given text, there is no specific mention of lubricant viscosity for a Sandisk assembly machine. The text does not provide any details about the viscosity requirements for such a machine. Therefore, I cannot answer the question with certainty based solely on the information given.",
+      "answer_point_coverage": 0.0,
+      "answer_point_hits": [],
+      "answer_point_misses": [],
+      "all_answer_points_hit": false,
+      "expected_source_present": null,
+      "refusal_detected": true,
+      "correct_unsupported_refusal": true,
+      "input_tokens": 415,
+      "sources_in_prompt": 3,
+      "unique_source_pages": 3,
+      "latency_seconds": 8.96931499999846,
+      "retrieved_sources": [
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 22,
+          "retrieval_rank": 1,
+          "retrieval_similarity": 0.3362870216369629
+        },
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 3,
+          "retrieval_rank": 2,
+          "retrieval_similarity": 0.3274223208427429
+        },
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 16,
+          "retrieval_rank": 3,
+          "retrieval_similarity": 0.3262207508087158
+        }
+      ]
+    },
+    {
+      "configuration": "basic_top3",
+      "prompt_style": "basic",
+      "top_k": 3,
+      "question_id": "U02",
+      "question": "What operating temperature should Sandisk use for its SMT placement machine?",
+      "supported": false,
+      "top_similarity": 0.3585525155067444,
+      "evidence_gate_triggered": false,
+      "llm_called": true,
+      "answer": "According to the provided context, Sandisk's SMT placement machine should be operated at an operating temperature of around 50\u00b0C (122\u00b0F). This information is directly stated in the first sentence of the given evidence:\n\n\"SANDISK SMT Placement Machine Operating Temperature Range: 20\u00b0C to 70\u00b0C (68\u00b0F to 158\u00b0F)\"\n\nThis range indicates that Sandisk recommends operating the SMT placement machine within this temperature range to ensure\n\nRetrieved sources:\n1. NIST.AMS.100-2 \u2014 PDF page 48\n2. NIST.AMS.100-2 \u2014 PDF page 34\n3. NIST.AMS.100-2 \u2014 PDF page 1",
+      "raw_model_answer": "According to the provided context, Sandisk's SMT placement machine should be operated at an operating temperature of around 50\u00b0C (122\u00b0F). This information is directly stated in the first sentence of the given evidence:\n\n\"SANDISK SMT Placement Machine Operating Temperature Range: 20\u00b0C to 70\u00b0C (68\u00b0F to 158\u00b0F)\"\n\nThis range indicates that Sandisk recommends operating the SMT placement machine within this temperature range to ensure",
+      "answer_point_coverage": 0.0,
+      "answer_point_hits": [],
+      "answer_point_misses": [],
+      "all_answer_points_hit": false,
+      "expected_source_present": null,
+      "refusal_detected": false,
+      "correct_unsupported_refusal": false,
+      "input_tokens": 480,
+      "sources_in_prompt": 3,
+      "unique_source_pages": 3,
+      "latency_seconds": 14.376752399999532,
+      "retrieved_sources": [
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 48,
+          "retrieval_rank": 1,
+          "retrieval_similarity": 0.3585525155067444
+        },
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 34,
+          "retrieval_rank": 2,
+          "retrieval_similarity": 0.3574720621109009
+        },
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 1,
+          "retrieval_rank": 3,
+          "retrieval_similarity": 0.34988611936569214
+        }
+      ]
+    },
+    {
+      "configuration": "basic_top3",
+      "prompt_style": "basic",
+      "top_k": 3,
+      "question_id": "U03",
+      "question": "Which Sandisk factory equipment model has the highest failure rate?",
+      "supported": false,
+      "top_similarity": 0.510385274887085,
+      "evidence_gate_triggered": false,
+      "llm_called": true,
+      "answer": "Based on the provided context, there is no specific mention of any particular Sandisk factory equipment model or its failure rates. The context discusses general principles related to PHM (Precision Health Management) but does not provide details about specific equipment models or their failure rates. Therefore, I cannot answer which Sandisk factory equipment model has the highest failure rate with certainty based solely on the given information.\n\nRetrieved sources:\n1. NIST.AMS.100-2 \u2014 PDF page 37\n2. NIST.AMS.100-2 \u2014 PDF page 55\n3. NIST.AMS.100-2 \u2014 PDF page 11",
+      "raw_model_answer": "Based on the provided context, there is no specific mention of any particular Sandisk factory equipment model or its failure rates. The context discusses general principles related to PHM (Precision Health Management) but does not provide details about specific equipment models or their failure rates. Therefore, I cannot answer which Sandisk factory equipment model has the highest failure rate with certainty based solely on the given information.",
+      "answer_point_coverage": 0.0,
+      "answer_point_hits": [],
+      "answer_point_misses": [],
+      "all_answer_points_hit": false,
+      "expected_source_present": null,
+      "refusal_detected": true,
+      "correct_unsupported_refusal": true,
+      "input_tokens": 454,
+      "sources_in_prompt": 3,
+      "unique_source_pages": 3,
+      "latency_seconds": 11.776027899999463,
+      "retrieved_sources": [
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 37,
+          "retrieval_rank": 1,
+          "retrieval_similarity": 0.510385274887085
+        },
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 55,
+          "retrieval_rank": 2,
+          "retrieval_similarity": 0.5099719762802124
+        },
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 11,
+          "retrieval_rank": 3,
+          "retrieval_similarity": 0.499176949262619
+        }
+      ]
+    },
+    {
+      "configuration": "basic_top5",
+      "prompt_style": "basic",
+      "top_k": 5,
+      "question_id": "Q01",
+      "question": "How does reactive maintenance differ from preventive maintenance?",
+      "supported": true,
+      "top_similarity": 0.7775448560714722,
+      "evidence_gate_triggered": false,
+      "llm_called": true,
+      "answer": "Based on the information provided in the table, reactive maintenance differs from preventive maintenance in several key ways:\n\n1. **Definition**: Reactive maintenance involves doing nothing until something breaks, fails, or stops operating within required specifications. This contrasts with preventive maintenance, which focuses on identifying potential problems before they occur.\n\n2. **Cost**: The table shows that reactive maintenance costs significantly more than preventive maintenance. Specifically, it states that \"reactive is 3.28 times higher\" compared to\n\nRetrieved sources:\n1. NIST.AMS.100-34 \u2014 PDF page 47\n2. NIST.AMS.100-34 \u2014 PDF page 7\n3. NIST.AMS.100-34 \u2014 PDF page 14\n4. NIST.AMS.100-34 \u2014 PDF page 43\n5. NIST.AMS.100-18 \u2014 PDF page 11",
+      "raw_model_answer": "Based on the information provided in the table, reactive maintenance differs from preventive maintenance in several key ways:\n\n1. **Definition**: Reactive maintenance involves doing nothing until something breaks, fails, or stops operating within required specifications. This contrasts with preventive maintenance, which focuses on identifying potential problems before they occur.\n\n2. **Cost**: The table shows that reactive maintenance costs significantly more than preventive maintenance. Specifically, it states that \"reactive is 3.28 times higher\" compared to",
+      "answer_point_coverage": 0.0,
+      "answer_point_hits": [],
+      "answer_point_misses": [
+        "reactive occurs after breakdown or need for repair",
+        "preventive is scheduled in advance"
+      ],
+      "all_answer_points_hit": false,
+      "expected_source_present": true,
+      "refusal_detected": false,
+      "correct_unsupported_refusal": false,
+      "input_tokens": 735,
+      "sources_in_prompt": 5,
+      "unique_source_pages": 5,
+      "latency_seconds": 15.823208699999668,
+      "retrieved_sources": [
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 47,
+          "retrieval_rank": 1,
+          "retrieval_similarity": 0.7775448560714722
+        },
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 7,
+          "retrieval_rank": 2,
+          "retrieval_similarity": 0.7765377759933472
+        },
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 14,
+          "retrieval_rank": 3,
+          "retrieval_similarity": 0.7691890001296997
+        },
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 43,
+          "retrieval_rank": 4,
+          "retrieval_similarity": 0.7611863613128662
+        },
+        {
+          "document": "NIST.AMS.100-18",
+          "pdf_page": 11,
+          "retrieval_rank": 5,
+          "retrieval_similarity": 0.753417432308197
+        }
+      ]
+    },
+    {
+      "configuration": "basic_top5",
+      "prompt_style": "basic",
+      "top_k": 5,
+      "question_id": "Q02",
+      "question": "Which measurable units can be used to schedule preventive maintenance?",
+      "supported": true,
+      "top_similarity": 0.6771284937858582,
+      "evidence_gate_triggered": false,
+      "llm_called": true,
+      "answer": "Based on the information provided in the text, the measurable units that can be used to schedule preventive maintenance are:\n\n1. Time\n2. Distance\n\nThese two units are mentioned directly in the relevant sections of the text. The text states that \"time in months or distance in miles (or kilometers)\" can be easily monitored as time in months or distance in miles (or kilometers).\n\nRetrieved sources:\n1. NIST.AMS.100-34 \u2014 PDF page 15\n2. NIST.AMS.100-18 \u2014 PDF page 10\n3. NIST.AMS.100-18 \u2014 PDF page 15\n4. NIST.AMS.100-34 \u2014 PDF page 9\n5. NIST.AMS.100-18 \u2014 PDF page 11",
+      "raw_model_answer": "Based on the information provided in the text, the measurable units that can be used to schedule preventive maintenance are:\n\n1. Time\n2. Distance\n\nThese two units are mentioned directly in the relevant sections of the text. The text states that \"time in months or distance in miles (or kilometers)\" can be easily monitored as time in months or distance in miles (or kilometers).",
+      "answer_point_coverage": 0.6666666666666666,
+      "answer_point_hits": [
+        "time",
+        "distance"
+      ],
+      "answer_point_misses": [
+        "runtime or operating cycles"
+      ],
+      "all_answer_points_hit": false,
+      "expected_source_present": true,
+      "refusal_detected": false,
+      "correct_unsupported_refusal": false,
+      "input_tokens": 769,
+      "sources_in_prompt": 5,
+      "unique_source_pages": 5,
+      "latency_seconds": 13.380926499999987,
+      "retrieved_sources": [
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 15,
+          "retrieval_rank": 1,
+          "retrieval_similarity": 0.6771284937858582
+        },
+        {
+          "document": "NIST.AMS.100-18",
+          "pdf_page": 10,
+          "retrieval_rank": 2,
+          "retrieval_similarity": 0.6026455163955688
+        },
+        {
+          "document": "NIST.AMS.100-18",
+          "pdf_page": 15,
+          "retrieval_rank": 3,
+          "retrieval_similarity": 0.5845104455947876
+        },
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 9,
+          "retrieval_rank": 4,
+          "retrieval_similarity": 0.5833455324172974
+        },
+        {
+          "document": "NIST.AMS.100-18",
+          "pdf_page": 11,
+          "retrieval_rank": 5,
+          "retrieval_similarity": 0.5733804106712341
+        }
+      ]
+    },
+    {
+      "configuration": "basic_top5",
+      "prompt_style": "basic",
+      "top_k": 5,
+      "question_id": "Q03",
+      "question": "What information is used to decide when predictive maintenance should be performed?",
+      "supported": true,
+      "top_similarity": 0.7772319912910461,
+      "evidence_gate_triggered": false,
+      "llm_called": true,
+      "answer": "Based on the provided context, the key information used to decide when predictive maintenance should be performed is:\n\n1. The presence of a significant number of companies that focus on predictive maintenance.\n2. A substantial portion of these companies indicate that they have a high level of predictive maintenance.\n3. The findings suggest that companies considering predictive maintenance often start with active projects in manufacturing diagnostics and prognostics.\n4. The study indicates that approximately 52% of companies that focus on predictive maintenance\n\nRetrieved sources:\n1. NIST.AMS.100-18 \u2014 PDF page 20\n2. NIST.AMS.100-2 \u2014 PDF page 18\n3. NIST.AMS.100-18 \u2014 PDF page 10\n4. NIST.AMS.100-18 \u2014 PDF page 7",
+      "raw_model_answer": "Based on the provided context, the key information used to decide when predictive maintenance should be performed is:\n\n1. The presence of a significant number of companies that focus on predictive maintenance.\n2. A substantial portion of these companies indicate that they have a high level of predictive maintenance.\n3. The findings suggest that companies considering predictive maintenance often start with active projects in manufacturing diagnostics and prognostics.\n4. The study indicates that approximately 52% of companies that focus on predictive maintenance",
+      "answer_point_coverage": 0.0,
+      "answer_point_hits": [],
+      "answer_point_misses": [
+        "reliability or condition measurements",
+        "sensor and historical data or models"
+      ],
+      "all_answer_points_hit": false,
+      "expected_source_present": true,
+      "refusal_detected": false,
+      "correct_unsupported_refusal": false,
+      "input_tokens": 732,
+      "sources_in_prompt": 5,
+      "unique_source_pages": 4,
+      "latency_seconds": 15.702760500000295,
+      "retrieved_sources": [
+        {
+          "document": "NIST.AMS.100-18",
+          "pdf_page": 20,
+          "retrieval_rank": 1,
+          "retrieval_similarity": 0.7772319912910461
+        },
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 18,
+          "retrieval_rank": 3,
+          "retrieval_similarity": 0.748634934425354
+        },
+        {
+          "document": "NIST.AMS.100-18",
+          "pdf_page": 10,
+          "retrieval_rank": 4,
+          "retrieval_similarity": 0.7462438344955444
+        },
+        {
+          "document": "NIST.AMS.100-18",
+          "pdf_page": 7,
+          "retrieval_rank": 5,
+          "retrieval_similarity": 0.7457072734832764
+        }
+      ]
+    },
+    {
+      "configuration": "basic_top5",
+      "prompt_style": "basic",
+      "top_k": 5,
+      "question_id": "Q04",
+      "question": "What is a disadvantage of performing excessive preventive maintenance?",
+      "supported": true,
+      "top_similarity": 0.6573714017868042,
+      "evidence_gate_triggered": false,
+      "llm_called": true,
+      "answer": "Based on the provided information, one potential disadvantage of performing excessive preventive maintenance is:\n\n**\"Decrease downtime.\"**\n\nThis statement directly addresses the issue raised in the previous answer regarding the consequences of excessive preventive maintenance. The passage mentions that \"Preventive maintenance was associated with 15% less downtime, 87% lower defect rate, and 66% less inventory increases due to maintenance issues,\" indicating that excessive preventive maintenance leads to reduced downtime compared to other maintenance strategies\n\nRetrieved sources:\n1. NIST.AMS.100-34 \u2014 PDF page 5\n2. NIST.AMS.100-34 \u2014 PDF page 13\n3. NIST.AMS.100-34 \u2014 PDF page 46\n4. NIST.AMS.100-34 \u2014 PDF page 41\n5. NIST.AMS.100-34 \u2014 PDF page 17",
+      "raw_model_answer": "Based on the provided information, one potential disadvantage of performing excessive preventive maintenance is:\n\n**\"Decrease downtime.\"**\n\nThis statement directly addresses the issue raised in the previous answer regarding the consequences of excessive preventive maintenance. The passage mentions that \"Preventive maintenance was associated with 15% less downtime, 87% lower defect rate, and 66% less inventory increases due to maintenance issues,\" indicating that excessive preventive maintenance leads to reduced downtime compared to other maintenance strategies",
+      "answer_point_coverage": 0.0,
+      "answer_point_hits": [],
+      "answer_point_misses": [
+        "unnecessary labor or material cost",
+        "planned maintenance still creates downtime"
+      ],
+      "all_answer_points_hit": false,
+      "expected_source_present": false,
+      "refusal_detected": false,
+      "correct_unsupported_refusal": false,
+      "input_tokens": 559,
+      "sources_in_prompt": 5,
+      "unique_source_pages": 5,
+      "latency_seconds": 14.799910399999135,
+      "retrieved_sources": [
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 5,
+          "retrieval_rank": 1,
+          "retrieval_similarity": 0.6573714017868042
+        },
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 13,
+          "retrieval_rank": 2,
+          "retrieval_similarity": 0.6526138186454773
+        },
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 46,
+          "retrieval_rank": 3,
+          "retrieval_similarity": 0.6391851305961609
+        },
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 41,
+          "retrieval_rank": 4,
+          "retrieval_similarity": 0.6388776302337646
+        },
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 17,
+          "retrieval_rank": 5,
+          "retrieval_similarity": 0.638862133026123
+        }
+      ]
+    },
+    {
+      "configuration": "basic_top5",
+      "prompt_style": "basic",
+      "top_k": 5,
+      "question_id": "Q05",
+      "question": "What performance characteristics are near-term goals for PHM performance assessment?",
+      "supported": true,
+      "top_similarity": 0.755857527256012,
+      "evidence_gate_triggered": false,
+      "llm_called": true,
+      "answer": "Near-term goals for PHM performance assessment focus on evaluation of PHM as well as incorporating the key performance characteristics that are critical to manufacturing, including failure prediction/recovery, defect reduction, and early detection of events.\n\nRetrieved sources:\n1. NIST.AMS.100-2 \u2014 PDF page 33\n2. NIST.AMS.100-2 \u2014 PDF page 32\n3. NIST.AMS.100-2 \u2014 PDF page 38\n4. NIST.AMS.100-2 \u2014 PDF page 7",
+      "raw_model_answer": "Near-term goals for PHM performance assessment focus on evaluation of PHM as well as incorporating the key performance characteristics that are critical to manufacturing, including failure prediction/recovery, defect reduction, and early detection of events.",
+      "answer_point_coverage": 1.0,
+      "answer_point_hits": [
+        "failure prediction or recovery",
+        "defect reduction",
+        "early event or anomaly detection"
+      ],
+      "answer_point_misses": [],
+      "all_answer_points_hit": true,
+      "expected_source_present": true,
+      "refusal_detected": false,
+      "correct_unsupported_refusal": false,
+      "input_tokens": 692,
+      "sources_in_prompt": 5,
+      "unique_source_pages": 4,
+      "latency_seconds": 8.207315300000118,
+      "retrieved_sources": [
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 33,
+          "retrieval_rank": 1,
+          "retrieval_similarity": 0.755857527256012
+        },
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 32,
+          "retrieval_rank": 2,
+          "retrieval_similarity": 0.7270911335945129
+        },
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 38,
+          "retrieval_rank": 4,
+          "retrieval_similarity": 0.6667876839637756
+        },
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 7,
+          "retrieval_rank": 5,
+          "retrieval_similarity": 0.6525479555130005
+        }
+      ]
+    },
+    {
+      "configuration": "basic_top5",
+      "prompt_style": "basic",
+      "top_k": 5,
+      "question_id": "Q06",
+      "question": "What safety and maintainability benefits are associated with prognostics and health management?",
+      "supported": true,
+      "top_similarity": 0.8059178590774536,
+      "evidence_gate_triggered": false,
+      "llm_called": true,
+      "answer": "Based on the information provided in the given text, the safety and maintainability benefits associated with prognostics and health management are:\n\n1. **Safety**: Advancement of warning of failure and avoidance of catastrophic failures.\n2. **Maintainability**: Elimination of redundant inspections, minimizing unscheduled maintenance, and decreasing test equipment requirements.\n\nThese benefits are highlighted in the first two bullet points of the evidence provided.\n\nRetrieved sources:\n1. NIST.AMS.100-18 \u2014 PDF page 17\n2. NIST.AMS.100-2 \u2014 PDF page 7\n3. NIST.AMS.100-2 \u2014 PDF page 10",
+      "raw_model_answer": "Based on the information provided in the given text, the safety and maintainability benefits associated with prognostics and health management are:\n\n1. **Safety**: Advancement of warning of failure and avoidance of catastrophic failures.\n2. **Maintainability**: Elimination of redundant inspections, minimizing unscheduled maintenance, and decreasing test equipment requirements.\n\nThese benefits are highlighted in the first two bullet points of the evidence provided.",
+      "answer_point_coverage": 1.0,
+      "answer_point_hits": [
+        "advance warning and avoiding catastrophic failure",
+        "reduced inspection or unscheduled maintenance"
+      ],
+      "answer_point_misses": [],
+      "all_answer_points_hit": true,
+      "expected_source_present": true,
+      "refusal_detected": false,
+      "correct_unsupported_refusal": false,
+      "input_tokens": 566,
+      "sources_in_prompt": 5,
+      "unique_source_pages": 3,
+      "latency_seconds": 12.89259950000087,
+      "retrieved_sources": [
+        {
+          "document": "NIST.AMS.100-18",
+          "pdf_page": 17,
+          "retrieval_rank": 1,
+          "retrieval_similarity": 0.8059178590774536
+        },
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 7,
+          "retrieval_rank": 2,
+          "retrieval_similarity": 0.6886851787567139
+        },
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 10,
+          "retrieval_rank": 3,
+          "retrieval_similarity": 0.6573432087898254
+        }
+      ]
+    },
+    {
+      "configuration": "basic_top5",
+      "prompt_style": "basic",
+      "top_k": 5,
+      "question_id": "Q07",
+      "question": "What are cascading effects in direct maintenance and repair costs?",
+      "supported": true,
+      "top_similarity": 0.7740808129310608,
+      "evidence_gate_triggered": false,
+      "llm_called": true,
+      "answer": "Cascading effects refer to subsequent damage caused by a breakdown of a machine (i.e., repair).\n\nRetrieved sources:\n1. NIST.AMS.100-34 \u2014 PDF page 22\n2. NIST.AMS.100-18 \u2014 PDF page 8\n3. NIST.AMS.100-18 \u2014 PDF page 25\n4. NIST.AMS.100-34 \u2014 PDF page 12",
+      "raw_model_answer": "Cascading effects refer to subsequent damage caused by a breakdown of a machine (i.e., repair).",
+      "answer_point_coverage": 1.0,
+      "answer_point_hits": [
+        "subsequent damage caused by machine breakdown"
+      ],
+      "answer_point_misses": [],
+      "all_answer_points_hit": true,
+      "expected_source_present": true,
+      "refusal_detected": false,
+      "correct_unsupported_refusal": false,
+      "input_tokens": 690,
+      "sources_in_prompt": 5,
+      "unique_source_pages": 4,
+      "latency_seconds": 5.194969500000298,
+      "retrieved_sources": [
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 22,
+          "retrieval_rank": 1,
+          "retrieval_similarity": 0.7740808129310608
+        },
+        {
+          "document": "NIST.AMS.100-18",
+          "pdf_page": 8,
+          "retrieval_rank": 2,
+          "retrieval_similarity": 0.7584308981895447
+        },
+        {
+          "document": "NIST.AMS.100-18",
+          "pdf_page": 25,
+          "retrieval_rank": 3,
+          "retrieval_similarity": 0.7492192387580872
+        },
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 12,
+          "retrieval_rank": 4,
+          "retrieval_similarity": 0.7108821868896484
+        }
+      ]
+    },
+    {
+      "configuration": "basic_top5",
+      "prompt_style": "basic",
+      "top_k": 5,
+      "question_id": "Q08",
+      "question": "How does condition-based maintenance with prognostics use health information?",
+      "supported": true,
+      "top_similarity": 0.7375563383102417,
+      "evidence_gate_triggered": false,
+      "llm_called": true,
+      "answer": "Condition-based maintenance with prognostics uses health information to predict a failure's evolution and diagnose failures before they occur. This approach involves utilizing the assessed health or diagnostic fault classifier output to predict a failure's evolution. By doing so, manufacturers can take proactive measures to prevent failures and maintain product reliability. The goal is to minimize downtime and reduce unnecessary maintenance efforts while ensuring that critical systems remain functional.\n\nRetrieved sources:\n1. NIST.AMS.100-18 \u2014 PDF page 17\n2. NIST.AMS.100-2 \u2014 PDF page 16\n3. NIST.AMS.100-2 \u2014 PDF page 10\n4. NIST.AMS.100-18 \u2014 PDF page 20",
+      "raw_model_answer": "Condition-based maintenance with prognostics uses health information to predict a failure's evolution and diagnose failures before they occur. This approach involves utilizing the assessed health or diagnostic fault classifier output to predict a failure's evolution. By doing so, manufacturers can take proactive measures to prevent failures and maintain product reliability. The goal is to minimize downtime and reduce unnecessary maintenance efforts while ensuring that critical systems remain functional.",
+      "answer_point_coverage": 1.0,
+      "answer_point_hits": [
+        "uses assessed health or diagnostic output",
+        "predicts failure evolution"
+      ],
+      "answer_point_misses": [],
+      "all_answer_points_hit": true,
+      "expected_source_present": true,
+      "refusal_detected": false,
+      "correct_unsupported_refusal": false,
+      "input_tokens": 709,
+      "sources_in_prompt": 5,
+      "unique_source_pages": 4,
+      "latency_seconds": 13.507629899999301,
+      "retrieved_sources": [
+        {
+          "document": "NIST.AMS.100-18",
+          "pdf_page": 17,
+          "retrieval_rank": 1,
+          "retrieval_similarity": 0.7375563383102417
+        },
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 16,
+          "retrieval_rank": 3,
+          "retrieval_similarity": 0.7192909717559814
+        },
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 10,
+          "retrieval_rank": 4,
+          "retrieval_similarity": 0.6816716194152832
+        },
+        {
+          "document": "NIST.AMS.100-18",
+          "pdf_page": 20,
+          "retrieval_rank": 5,
+          "retrieval_similarity": 0.6686245203018188
+        }
+      ]
+    },
+    {
+      "configuration": "basic_top5",
+      "prompt_style": "basic",
+      "top_k": 5,
+      "question_id": "Q09",
+      "question": "Why is measuring return on investment for PHM challenging?",
+      "supported": true,
+      "top_similarity": 0.6780706644058228,
+      "evidence_gate_triggered": false,
+      "llm_called": true,
+      "answer": "Measuring the return on investment (ROI) for PHM is challenging because:\n\n1. **Lack of Reliable Quantitative Methods**: There is currently no widely accepted method for quantifying the ROI of PHM applications, which makes it difficult to accurately assess its financial benefits.\n\n2. **Complexity of Implementing PHM**: Developing and implementing PHM systems requires significant resources and expertise, including sensor integration, IT infrastructure setup, data collection, and maintenance. This complexity adds to\n\nRetrieved sources:\n1. NIST.AMS.100-2 \u2014 PDF page 56\n2. NIST.AMS.100-18 \u2014 PDF page 43\n3. NIST.AMS.100-2 \u2014 PDF page 9\n4. NIST.AMS.100-2 \u2014 PDF page 20",
+      "raw_model_answer": "Measuring the return on investment (ROI) for PHM is challenging because:\n\n1. **Lack of Reliable Quantitative Methods**: There is currently no widely accepted method for quantifying the ROI of PHM applications, which makes it difficult to accurately assess its financial benefits.\n\n2. **Complexity of Implementing PHM**: Developing and implementing PHM systems requires significant resources and expertise, including sensor integration, IT infrastructure setup, data collection, and maintenance. This complexity adds to",
+      "answer_point_coverage": 0.3333333333333333,
+      "answer_point_hits": [
+        "limitations in models data methods or metrics"
+      ],
+      "answer_point_misses": [
+        "no standard or reliable ROI method",
+        "benefits may require equipment life cycles to measure"
+      ],
+      "all_answer_points_hit": false,
+      "expected_source_present": true,
+      "refusal_detected": false,
+      "correct_unsupported_refusal": false,
+      "input_tokens": 752,
+      "sources_in_prompt": 5,
+      "unique_source_pages": 4,
+      "latency_seconds": 15.73555750000014,
+      "retrieved_sources": [
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 56,
+          "retrieval_rank": 1,
+          "retrieval_similarity": 0.6780706644058228
+        },
+        {
+          "document": "NIST.AMS.100-18",
+          "pdf_page": 43,
+          "retrieval_rank": 2,
+          "retrieval_similarity": 0.6095651388168335
+        },
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 9,
+          "retrieval_rank": 4,
+          "retrieval_similarity": 0.5669163465499878
+        },
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 20,
+          "retrieval_rank": 5,
+          "retrieval_similarity": 0.5526833534240723
+        }
+      ]
+    },
+    {
+      "configuration": "basic_top5",
+      "prompt_style": "basic",
+      "top_k": 5,
+      "question_id": "Q10",
+      "question": "How do the labor and parts cost characteristics of reactive and predictive maintenance compare?",
+      "supported": true,
+      "top_similarity": 0.7547684907913208,
+      "evidence_gate_triggered": false,
+      "llm_called": true,
+      "answer": "Based on the information provided in the evidence, it can be concluded that:\n\n1. Reactive maintenance has higher labor and part costs compared to predictive maintenance.\n2. Predictive maintenance has lower labor and part costs compared to reactive maintenance.\n3. There is no clear comparison between reactive and predictive maintenance regarding labor and part costs in the given evidence.\n\nRetrieved sources:\n1. NIST.AMS.100-34 \u2014 PDF page 7\n2. NIST.AMS.100-34 \u2014 PDF page 43\n3. NIST.AMS.100-18 \u2014 PDF page 15\n4. NIST.AMS.100-18 \u2014 PDF page 11\n5. NIST.AMS.100-34 \u2014 PDF page 10",
+      "raw_model_answer": "Based on the information provided in the evidence, it can be concluded that:\n\n1. Reactive maintenance has higher labor and part costs compared to predictive maintenance.\n2. Predictive maintenance has lower labor and part costs compared to reactive maintenance.\n3. There is no clear comparison between reactive and predictive maintenance regarding labor and part costs in the given evidence.",
+      "answer_point_coverage": 0.5,
+      "answer_point_hits": [
+        "reactive has high labor and parts costs"
+      ],
+      "answer_point_misses": [
+        "predictive has low labor and medium parts costs"
+      ],
+      "all_answer_points_hit": false,
+      "expected_source_present": true,
+      "refusal_detected": false,
+      "correct_unsupported_refusal": false,
+      "input_tokens": 713,
+      "sources_in_prompt": 5,
+      "unique_source_pages": 5,
+      "latency_seconds": 11.630499900000359,
+      "retrieved_sources": [
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 7,
+          "retrieval_rank": 1,
+          "retrieval_similarity": 0.7547684907913208
+        },
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 43,
+          "retrieval_rank": 2,
+          "retrieval_similarity": 0.7504749298095703
+        },
+        {
+          "document": "NIST.AMS.100-18",
+          "pdf_page": 15,
+          "retrieval_rank": 3,
+          "retrieval_similarity": 0.7383952140808105
+        },
+        {
+          "document": "NIST.AMS.100-18",
+          "pdf_page": 11,
+          "retrieval_rank": 4,
+          "retrieval_similarity": 0.730932354927063
+        },
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 10,
+          "retrieval_rank": 5,
+          "retrieval_similarity": 0.7268069982528687
+        }
+      ]
+    },
+    {
+      "configuration": "basic_top5",
+      "prompt_style": "basic",
+      "top_k": 5,
+      "question_id": "U01",
+      "question": "What lubricant viscosity should be used for a Sandisk assembly machine?",
+      "supported": false,
+      "top_similarity": 0.3362870216369629,
+      "evidence_gate_triggered": false,
+      "llm_called": true,
+      "answer": "Based on the provided context, there is no specific information about lubricant viscosity for a Sandisk assembly machine. The context does not mention any particular lubricant viscosity for this type of machine. Therefore, I cannot answer the question based solely on the given information.\n\nRetrieved sources:\n1. NIST.AMS.100-2 \u2014 PDF page 22\n2. NIST.AMS.100-34 \u2014 PDF page 3\n3. NIST.AMS.100-34 \u2014 PDF page 16\n4. NIST.AMS.100-2 \u2014 PDF page 7\n5. NIST.AMS.100-2 \u2014 PDF page 16",
+      "raw_model_answer": "Based on the provided context, there is no specific information about lubricant viscosity for a Sandisk assembly machine. The context does not mention any particular lubricant viscosity for this type of machine. Therefore, I cannot answer the question based solely on the given information.",
+      "answer_point_coverage": 0.0,
+      "answer_point_hits": [],
+      "answer_point_misses": [],
+      "all_answer_points_hit": false,
+      "expected_source_present": null,
+      "refusal_detected": true,
+      "correct_unsupported_refusal": true,
+      "input_tokens": 605,
+      "sources_in_prompt": 5,
+      "unique_source_pages": 5,
+      "latency_seconds": 9.253139200000078,
+      "retrieved_sources": [
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 22,
+          "retrieval_rank": 1,
+          "retrieval_similarity": 0.3362870216369629
+        },
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 3,
+          "retrieval_rank": 2,
+          "retrieval_similarity": 0.3274223208427429
+        },
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 16,
+          "retrieval_rank": 3,
+          "retrieval_similarity": 0.3262207508087158
+        },
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 7,
+          "retrieval_rank": 4,
+          "retrieval_similarity": 0.32340008020401
+        },
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 16,
+          "retrieval_rank": 5,
+          "retrieval_similarity": 0.31085407733917236
+        }
+      ]
+    },
+    {
+      "configuration": "basic_top5",
+      "prompt_style": "basic",
+      "top_k": 5,
+      "question_id": "U02",
+      "question": "What operating temperature should Sandisk use for its SMT placement machine?",
+      "supported": false,
+      "top_similarity": 0.3585525155067444,
+      "evidence_gate_triggered": false,
+      "llm_called": true,
+      "answer": "Sandisk should use an operating temperature of 20\u00b0C for its SMT placement machine. This answer aligns with the information provided in the given text, which discusses the challenges faced when integrating a SMT placement machine into an enterprise environment, including issues related to sensor placement due to equipment design limitations, lack of or insufficient existing machine data, immaturity of models, and the absence of available generic PHM software solutions. The text also mentions that Sandisk has addressed these challenges\n\nRetrieved sources:\n1. NIST.AMS.100-2 \u2014 PDF page 48\n2. NIST.AMS.100-2 \u2014 PDF page 34\n3. NIST.AMS.100-2 \u2014 PDF page 1\n4. NIST.AMS.100-2 \u2014 PDF page 57\n5. NIST.AMS.100-2 \u2014 PDF page 25",
+      "raw_model_answer": "Sandisk should use an operating temperature of 20\u00b0C for its SMT placement machine. This answer aligns with the information provided in the given text, which discusses the challenges faced when integrating a SMT placement machine into an enterprise environment, including issues related to sensor placement due to equipment design limitations, lack of or insufficient existing machine data, immaturity of models, and the absence of available generic PHM software solutions. The text also mentions that Sandisk has addressed these challenges",
+      "answer_point_coverage": 0.0,
+      "answer_point_hits": [],
+      "answer_point_misses": [],
+      "all_answer_points_hit": false,
+      "expected_source_present": null,
+      "refusal_detected": false,
+      "correct_unsupported_refusal": false,
+      "input_tokens": 743,
+      "sources_in_prompt": 5,
+      "unique_source_pages": 5,
+      "latency_seconds": 15.621445299999323,
+      "retrieved_sources": [
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 48,
+          "retrieval_rank": 1,
+          "retrieval_similarity": 0.3585525155067444
+        },
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 34,
+          "retrieval_rank": 2,
+          "retrieval_similarity": 0.3574720621109009
+        },
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 1,
+          "retrieval_rank": 3,
+          "retrieval_similarity": 0.34988611936569214
+        },
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 57,
+          "retrieval_rank": 4,
+          "retrieval_similarity": 0.34503108263015747
+        },
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 25,
+          "retrieval_rank": 5,
+          "retrieval_similarity": 0.33813416957855225
+        }
+      ]
+    },
+    {
+      "configuration": "basic_top5",
+      "prompt_style": "basic",
+      "top_k": 5,
+      "question_id": "U03",
+      "question": "Which Sandisk factory equipment model has the highest failure rate?",
+      "supported": false,
+      "top_similarity": 0.510385274887085,
+      "evidence_gate_triggered": false,
+      "llm_called": true,
+      "answer": "Based on the provided context, there is no specific information about the failure rates of any particular Sandisk factory equipment model. The context focuses on general principles related to PHM infrastructure, hardware, software integration, and open-source communities, but does not include details about specific equipment models or their failure rates. Therefore, I cannot answer which Sandisk factory equipment model has the highest failure rate with the given information.\n\nRetrieved sources:\n1. NIST.AMS.100-2 \u2014 PDF page 37\n2. NIST.AMS.100-2 \u2014 PDF page 55\n3. NIST.AMS.100-2 \u2014 PDF page 11\n4. NIST.AMS.100-2 \u2014 PDF page 10\n5. NIST.AMS.100-2 \u2014 PDF page 57",
+      "raw_model_answer": "Based on the provided context, there is no specific information about the failure rates of any particular Sandisk factory equipment model. The context focuses on general principles related to PHM infrastructure, hardware, software integration, and open-source communities, but does not include details about specific equipment models or their failure rates. Therefore, I cannot answer which Sandisk factory equipment model has the highest failure rate with the given information.",
+      "answer_point_coverage": 0.0,
+      "answer_point_hits": [],
+      "answer_point_misses": [],
+      "all_answer_points_hit": false,
+      "expected_source_present": null,
+      "refusal_detected": true,
+      "correct_unsupported_refusal": true,
+      "input_tokens": 616,
+      "sources_in_prompt": 5,
+      "unique_source_pages": 5,
+      "latency_seconds": 13.425743899999361,
+      "retrieved_sources": [
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 37,
+          "retrieval_rank": 1,
+          "retrieval_similarity": 0.510385274887085
+        },
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 55,
+          "retrieval_rank": 2,
+          "retrieval_similarity": 0.5099719762802124
+        },
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 11,
+          "retrieval_rank": 3,
+          "retrieval_similarity": 0.499176949262619
+        },
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 10,
+          "retrieval_rank": 4,
+          "retrieval_similarity": 0.4764683246612549
+        },
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 57,
+          "retrieval_rank": 5,
+          "retrieval_similarity": 0.4695547819137573
+        }
+      ]
+    },
+    {
+      "configuration": "grounded_top3",
+      "prompt_style": "grounded",
+      "top_k": 3,
+      "question_id": "Q01",
+      "question": "How does reactive maintenance differ from preventive maintenance?",
+      "supported": true,
+      "top_similarity": 0.7775448560714722,
+      "evidence_gate_triggered": false,
+      "llm_called": true,
+      "answer": "Reactive maintenance involves doing nothing until something breaks, fails, or stops operating within required specifications, whereas preventive maintenance focuses on identifying potential issues before they occur and taking corrective actions to prevent them.\n\nRetrieved sources:\n1. NIST.AMS.100-34 \u2014 PDF page 47\n2. NIST.AMS.100-34 \u2014 PDF page 7\n3. NIST.AMS.100-34 \u2014 PDF page 14",
+      "raw_model_answer": "Reactive maintenance involves doing nothing until something breaks, fails, or stops operating within required specifications, whereas preventive maintenance focuses on identifying potential issues before they occur and taking corrective actions to prevent them.",
+      "answer_point_coverage": 0.0,
+      "answer_point_hits": [],
+      "answer_point_misses": [
+        "reactive occurs after breakdown or need for repair",
+        "preventive is scheduled in advance"
+      ],
+      "all_answer_points_hit": false,
+      "expected_source_present": true,
+      "refusal_detected": false,
+      "correct_unsupported_refusal": false,
+      "input_tokens": 522,
+      "sources_in_prompt": 3,
+      "unique_source_pages": 3,
+      "latency_seconds": 6.88634600000114,
+      "retrieved_sources": [
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 47,
+          "retrieval_rank": 1,
+          "retrieval_similarity": 0.7775448560714722
+        },
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 7,
+          "retrieval_rank": 2,
+          "retrieval_similarity": 0.7765377759933472
+        },
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 14,
+          "retrieval_rank": 3,
+          "retrieval_similarity": 0.7691890001296997
+        }
+      ]
+    },
+    {
+      "configuration": "grounded_top3",
+      "prompt_style": "grounded",
+      "top_k": 3,
+      "question_id": "Q02",
+      "question": "Which measurable units can be used to schedule preventive maintenance?",
+      "supported": true,
+      "top_similarity": 0.6771284937858582,
+      "evidence_gate_triggered": false,
+      "llm_called": true,
+      "answer": "Based on the provided information, the measurable units that can be used to schedule preventive maintenance include:\n\n1. Time (months)\n2. Distance (miles)\n3. Cycles (cycles)\n\nThese units allow for monitoring and scheduling maintenance activities according to predefined intervals.\n\nRetrieved sources:\n1. NIST.AMS.100-34 \u2014 PDF page 15\n2. NIST.AMS.100-18 \u2014 PDF page 10\n3. NIST.AMS.100-18 \u2014 PDF page 15",
+      "raw_model_answer": "Based on the provided information, the measurable units that can be used to schedule preventive maintenance include:\n\n1. Time (months)\n2. Distance (miles)\n3. Cycles (cycles)\n\nThese units allow for monitoring and scheduling maintenance activities according to predefined intervals.",
+      "answer_point_coverage": 1.0,
+      "answer_point_hits": [
+        "time",
+        "distance",
+        "runtime or operating cycles"
+      ],
+      "answer_point_misses": [],
+      "all_answer_points_hit": true,
+      "expected_source_present": true,
+      "refusal_detected": false,
+      "correct_unsupported_refusal": false,
+      "input_tokens": 526,
+      "sources_in_prompt": 3,
+      "unique_source_pages": 3,
+      "latency_seconds": 8.846003599999676,
+      "retrieved_sources": [
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 15,
+          "retrieval_rank": 1,
+          "retrieval_similarity": 0.6771284937858582
+        },
+        {
+          "document": "NIST.AMS.100-18",
+          "pdf_page": 10,
+          "retrieval_rank": 2,
+          "retrieval_similarity": 0.6026455163955688
+        },
+        {
+          "document": "NIST.AMS.100-18",
+          "pdf_page": 15,
+          "retrieval_rank": 3,
+          "retrieval_similarity": 0.5845104455947876
+        }
+      ]
+    },
+    {
+      "configuration": "grounded_top3",
+      "prompt_style": "grounded",
+      "top_k": 3,
+      "question_id": "Q03",
+      "question": "What information is used to decide when predictive maintenance should be performed?",
+      "supported": true,
+      "top_similarity": 0.7772319912910461,
+      "evidence_gate_triggered": false,
+      "llm_called": true,
+      "answer": "According to the evidence provided, predictive maintenance strategies are primarily determined based on assessing the condition of in-service equipment and determining when maintenance should be performed. This involves evaluating the likelihood of potential issues before they occur, which requires careful consideration of factors such as plant resources and budgets, and ensuring efficient data collection and processing.\n\nRetrieved sources:\n1. NIST.AMS.100-18 \u2014 PDF page 20\n2. NIST.AMS.100-2 \u2014 PDF page 18",
+      "raw_model_answer": "According to the evidence provided, predictive maintenance strategies are primarily determined based on assessing the condition of in-service equipment and determining when maintenance should be performed. This involves evaluating the likelihood of potential issues before they occur, which requires careful consideration of factors such as plant resources and budgets, and ensuring efficient data collection and processing.",
+      "answer_point_coverage": 0.5,
+      "answer_point_hits": [
+        "reliability or condition measurements"
+      ],
+      "answer_point_misses": [
+        "sensor and historical data or models"
+      ],
+      "all_answer_points_hit": false,
+      "expected_source_present": true,
+      "refusal_detected": false,
+      "correct_unsupported_refusal": false,
+      "input_tokens": 492,
+      "sources_in_prompt": 3,
+      "unique_source_pages": 2,
+      "latency_seconds": 10.00309229999948,
+      "retrieved_sources": [
+        {
+          "document": "NIST.AMS.100-18",
+          "pdf_page": 20,
+          "retrieval_rank": 1,
+          "retrieval_similarity": 0.7772319912910461
+        },
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 18,
+          "retrieval_rank": 3,
+          "retrieval_similarity": 0.748634934425354
+        }
+      ]
+    },
+    {
+      "configuration": "grounded_top3",
+      "prompt_style": "grounded",
+      "top_k": 3,
+      "question_id": "Q04",
+      "question": "What is a disadvantage of performing excessive preventive maintenance?",
+      "supported": true,
+      "top_similarity": 0.6573714017868042,
+      "evidence_gate_triggered": false,
+      "llm_called": true,
+      "answer": "Based on the provided information, excessive preventive maintenance can lead to reduced downtime, lower defect rates, and decreased inventory levels, but it also has potential drawbacks such as increased uncertainty in production time and counterintuitive results.\n\nRetrieved sources:\n1. NIST.AMS.100-34 \u2014 PDF page 5\n2. NIST.AMS.100-34 \u2014 PDF page 13\n3. NIST.AMS.100-34 \u2014 PDF page 46",
+      "raw_model_answer": "Based on the provided information, excessive preventive maintenance can lead to reduced downtime, lower defect rates, and decreased inventory levels, but it also has potential drawbacks such as increased uncertainty in production time and counterintuitive results.",
+      "answer_point_coverage": 0.0,
+      "answer_point_hits": [],
+      "answer_point_misses": [
+        "unnecessary labor or material cost",
+        "planned maintenance still creates downtime"
+      ],
+      "all_answer_points_hit": false,
+      "expected_source_present": false,
+      "refusal_detected": false,
+      "correct_unsupported_refusal": false,
+      "input_tokens": 336,
+      "sources_in_prompt": 3,
+      "unique_source_pages": 3,
+      "latency_seconds": 7.391321299999618,
+      "retrieved_sources": [
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 5,
+          "retrieval_rank": 1,
+          "retrieval_similarity": 0.6573714017868042
+        },
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 13,
+          "retrieval_rank": 2,
+          "retrieval_similarity": 0.6526138186454773
+        },
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 46,
+          "retrieval_rank": 3,
+          "retrieval_similarity": 0.6391851305961609
+        }
+      ]
+    },
+    {
+      "configuration": "grounded_top3",
+      "prompt_style": "grounded",
+      "top_k": 3,
+      "question_id": "Q05",
+      "question": "What performance characteristics are near-term goals for PHM performance assessment?",
+      "supported": true,
+      "top_similarity": 0.755857527256012,
+      "evidence_gate_triggered": false,
+      "llm_called": true,
+      "answer": "Near-term goals for PHM performance assessment focus on evaluation of PHM as well as incorporating the key performance characteristics that are critical to manufacturing, including failure prediction/ recovery, defect reduction, and early detection of events.\n\nRetrieved sources:\n1. NIST.AMS.100-2 \u2014 PDF page 33\n2. NIST.AMS.100-2 \u2014 PDF page 32",
+      "raw_model_answer": "Near-term goals for PHM performance assessment focus on evaluation of PHM as well as incorporating the key performance characteristics that are critical to manufacturing, including failure prediction/ recovery, defect reduction, and early detection of events.",
+      "answer_point_coverage": 1.0,
+      "answer_point_hits": [
+        "failure prediction or recovery",
+        "defect reduction",
+        "early event or anomaly detection"
+      ],
+      "answer_point_misses": [],
+      "all_answer_points_hit": true,
+      "expected_source_present": true,
+      "refusal_detected": false,
+      "correct_unsupported_refusal": false,
+      "input_tokens": 525,
+      "sources_in_prompt": 3,
+      "unique_source_pages": 2,
+      "latency_seconds": 9.427368099999512,
+      "retrieved_sources": [
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 33,
+          "retrieval_rank": 1,
+          "retrieval_similarity": 0.755857527256012
+        },
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 32,
+          "retrieval_rank": 2,
+          "retrieval_similarity": 0.7270911335945129
+        }
+      ]
+    },
+    {
+      "configuration": "grounded_top3",
+      "prompt_style": "grounded",
+      "top_k": 3,
+      "question_id": "Q06",
+      "question": "What safety and maintainability benefits are associated with prognostics and health management?",
+      "supported": true,
+      "top_similarity": 0.8059178590774536,
+      "evidence_gate_triggered": false,
+      "llm_called": true,
+      "answer": "Safety and maintainability benefits associated with prognostics and health management include advanced warning of failure, elimination of redundant inspections, minimized unscheduled maintenance, and decreased test equipment requirement.\n\nRetrieved sources:\n1. NIST.AMS.100-18 \u2014 PDF page 17\n2. NIST.AMS.100-2 \u2014 PDF page 7\n3. NIST.AMS.100-2 \u2014 PDF page 10",
+      "raw_model_answer": "Safety and maintainability benefits associated with prognostics and health management include advanced warning of failure, elimination of redundant inspections, minimized unscheduled maintenance, and decreased test equipment requirement.",
+      "answer_point_coverage": 0.5,
+      "answer_point_hits": [
+        "reduced inspection or unscheduled maintenance"
+      ],
+      "answer_point_misses": [
+        "advance warning and avoiding catastrophic failure"
+      ],
+      "all_answer_points_hit": false,
+      "expected_source_present": true,
+      "refusal_detected": false,
+      "correct_unsupported_refusal": false,
+      "input_tokens": 321,
+      "sources_in_prompt": 3,
+      "unique_source_pages": 3,
+      "latency_seconds": 8.087040000000343,
+      "retrieved_sources": [
+        {
+          "document": "NIST.AMS.100-18",
+          "pdf_page": 17,
+          "retrieval_rank": 1,
+          "retrieval_similarity": 0.8059178590774536
+        },
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 7,
+          "retrieval_rank": 2,
+          "retrieval_similarity": 0.6886851787567139
+        },
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 10,
+          "retrieval_rank": 3,
+          "retrieval_similarity": 0.6573432087898254
+        }
+      ]
+    },
+    {
+      "configuration": "grounded_top3",
+      "prompt_style": "grounded",
+      "top_k": 3,
+      "question_id": "Q07",
+      "question": "What are cascading effects in direct maintenance and repair costs?",
+      "supported": true,
+      "top_similarity": 0.7740808129310608,
+      "evidence_gate_triggered": false,
+      "llm_called": true,
+      "answer": "Cascading effects refer to subsequent damage caused by a breakdown of a machine (e.g., repair).\n\nRetrieved sources:\n1. NIST.AMS.100-34 \u2014 PDF page 22\n2. NIST.AMS.100-18 \u2014 PDF page 8\n3. NIST.AMS.100-18 \u2014 PDF page 25",
+      "raw_model_answer": "Cascading effects refer to subsequent damage caused by a breakdown of a machine (e.g., repair).",
+      "answer_point_coverage": 1.0,
+      "answer_point_hits": [
+        "subsequent damage caused by machine breakdown"
+      ],
+      "answer_point_misses": [],
+      "all_answer_points_hit": true,
+      "expected_source_present": true,
+      "refusal_detected": false,
+      "correct_unsupported_refusal": false,
+      "input_tokens": 515,
+      "sources_in_prompt": 3,
+      "unique_source_pages": 3,
+      "latency_seconds": 6.0378650999991805,
+      "retrieved_sources": [
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 22,
+          "retrieval_rank": 1,
+          "retrieval_similarity": 0.7740808129310608
+        },
+        {
+          "document": "NIST.AMS.100-18",
+          "pdf_page": 8,
+          "retrieval_rank": 2,
+          "retrieval_similarity": 0.7584308981895447
+        },
+        {
+          "document": "NIST.AMS.100-18",
+          "pdf_page": 25,
+          "retrieval_rank": 3,
+          "retrieval_similarity": 0.7492192387580872
+        }
+      ]
+    },
+    {
+      "configuration": "grounded_top3",
+      "prompt_style": "grounded",
+      "top_k": 3,
+      "question_id": "Q08",
+      "question": "How does condition-based maintenance with prognostics use health information?",
+      "supported": true,
+      "top_similarity": 0.7375563383102417,
+      "evidence_gate_triggered": false,
+      "llm_called": true,
+      "answer": "Condition-based maintenance with prognostics uses health information to predict failure evolution, thereby improving product reliability and productivity.\n\nRetrieved sources:\n1. NIST.AMS.100-18 \u2014 PDF page 17\n2. NIST.AMS.100-2 \u2014 PDF page 16",
+      "raw_model_answer": "Condition-based maintenance with prognostics uses health information to predict failure evolution, thereby improving product reliability and productivity.",
+      "answer_point_coverage": 1.0,
+      "answer_point_hits": [
+        "uses assessed health or diagnostic output",
+        "predicts failure evolution"
+      ],
+      "answer_point_misses": [],
+      "all_answer_points_hit": true,
+      "expected_source_present": true,
+      "refusal_detected": false,
+      "correct_unsupported_refusal": false,
+      "input_tokens": 518,
+      "sources_in_prompt": 3,
+      "unique_source_pages": 2,
+      "latency_seconds": 5.460800299999391,
+      "retrieved_sources": [
+        {
+          "document": "NIST.AMS.100-18",
+          "pdf_page": 17,
+          "retrieval_rank": 1,
+          "retrieval_similarity": 0.7375563383102417
+        },
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 16,
+          "retrieval_rank": 3,
+          "retrieval_similarity": 0.7192909717559814
+        }
+      ]
+    },
+    {
+      "configuration": "grounded_top3",
+      "prompt_style": "grounded",
+      "top_k": 3,
+      "question_id": "Q09",
+      "question": "Why is measuring return on investment for PHM challenging?",
+      "supported": true,
+      "top_similarity": 0.6780706644058228,
+      "evidence_gate_triggered": false,
+      "llm_called": true,
+      "answer": "Measuring return on investment for PHM is challenging because it often requires measuring over equipment life and maintenance cycles, which can be difficult to quantify accurately. Additionally, the cost of enabling technology and infrastructure can be high, making it challenging to justify the initial investment in PHM.\n\nRetrieved sources:\n1. NIST.AMS.100-2 \u2014 PDF page 56\n2. NIST.AMS.100-18 \u2014 PDF page 43",
+      "raw_model_answer": "Measuring return on investment for PHM is challenging because it often requires measuring over equipment life and maintenance cycles, which can be difficult to quantify accurately. Additionally, the cost of enabling technology and infrastructure can be high, making it challenging to justify the initial investment in PHM.",
+      "answer_point_coverage": 0.3333333333333333,
+      "answer_point_hits": [
+        "benefits may require equipment life cycles to measure"
+      ],
+      "answer_point_misses": [
+        "no standard or reliable ROI method",
+        "limitations in models data methods or metrics"
+      ],
+      "all_answer_points_hit": false,
+      "expected_source_present": true,
+      "refusal_detected": false,
+      "correct_unsupported_refusal": false,
+      "input_tokens": 518,
+      "sources_in_prompt": 3,
+      "unique_source_pages": 2,
+      "latency_seconds": 11.6133121999992,
+      "retrieved_sources": [
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 56,
+          "retrieval_rank": 1,
+          "retrieval_similarity": 0.6780706644058228
+        },
+        {
+          "document": "NIST.AMS.100-18",
+          "pdf_page": 43,
+          "retrieval_rank": 2,
+          "retrieval_similarity": 0.6095651388168335
+        }
+      ]
+    },
+    {
+      "configuration": "grounded_top3",
+      "prompt_style": "grounded",
+      "top_k": 3,
+      "question_id": "Q10",
+      "question": "How do the labor and parts cost characteristics of reactive and predictive maintenance compare?",
+      "supported": true,
+      "top_similarity": 0.7547684907913208,
+      "evidence_gate_triggered": false,
+      "llm_called": true,
+      "answer": "According to the information provided, reactive maintenance has higher labor and part costs compared to predictive maintenance.\n\nRetrieved sources:\n1. NIST.AMS.100-34 \u2014 PDF page 7\n2. NIST.AMS.100-34 \u2014 PDF page 43\n3. NIST.AMS.100-18 \u2014 PDF page 15",
+      "raw_model_answer": "According to the information provided, reactive maintenance has higher labor and part costs compared to predictive maintenance.",
+      "answer_point_coverage": 0.5,
+      "answer_point_hits": [
+        "reactive has high labor and parts costs"
+      ],
+      "answer_point_misses": [
+        "predictive has low labor and medium parts costs"
+      ],
+      "all_answer_points_hit": false,
+      "expected_source_present": true,
+      "refusal_detected": false,
+      "correct_unsupported_refusal": false,
+      "input_tokens": 480,
+      "sources_in_prompt": 3,
+      "unique_source_pages": 3,
+      "latency_seconds": 4.714496399999916,
+      "retrieved_sources": [
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 7,
+          "retrieval_rank": 1,
+          "retrieval_similarity": 0.7547684907913208
+        },
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 43,
+          "retrieval_rank": 2,
+          "retrieval_similarity": 0.7504749298095703
+        },
+        {
+          "document": "NIST.AMS.100-18",
+          "pdf_page": 15,
+          "retrieval_rank": 3,
+          "retrieval_similarity": 0.7383952140808105
+        }
+      ]
+    },
+    {
+      "configuration": "grounded_top3",
+      "prompt_style": "grounded",
+      "top_k": 3,
+      "question_id": "U01",
+      "question": "What lubricant viscosity should be used for a Sandisk assembly machine?",
+      "supported": false,
+      "top_similarity": 0.3362870216369629,
+      "evidence_gate_triggered": true,
+      "llm_called": false,
+      "answer": "INSUFFICIENT EVIDENCE",
+      "raw_model_answer": "",
+      "answer_point_coverage": 0.0,
+      "answer_point_hits": [],
+      "answer_point_misses": [],
+      "all_answer_points_hit": false,
+      "expected_source_present": null,
+      "refusal_detected": true,
+      "correct_unsupported_refusal": true,
+      "input_tokens": 0,
+      "sources_in_prompt": 0,
+      "unique_source_pages": 0,
+      "latency_seconds": 0.0,
+      "retrieved_sources": []
+    },
+    {
+      "configuration": "grounded_top3",
+      "prompt_style": "grounded",
+      "top_k": 3,
+      "question_id": "U02",
+      "question": "What operating temperature should Sandisk use for its SMT placement machine?",
+      "supported": false,
+      "top_similarity": 0.3585525155067444,
+      "evidence_gate_triggered": true,
+      "llm_called": false,
+      "answer": "INSUFFICIENT EVIDENCE",
+      "raw_model_answer": "",
+      "answer_point_coverage": 0.0,
+      "answer_point_hits": [],
+      "answer_point_misses": [],
+      "all_answer_points_hit": false,
+      "expected_source_present": null,
+      "refusal_detected": true,
+      "correct_unsupported_refusal": true,
+      "input_tokens": 0,
+      "sources_in_prompt": 0,
+      "unique_source_pages": 0,
+      "latency_seconds": 0.0,
+      "retrieved_sources": []
+    },
+    {
+      "configuration": "grounded_top3",
+      "prompt_style": "grounded",
+      "top_k": 3,
+      "question_id": "U03",
+      "question": "Which Sandisk factory equipment model has the highest failure rate?",
+      "supported": false,
+      "top_similarity": 0.510385274887085,
+      "evidence_gate_triggered": false,
+      "llm_called": true,
+      "answer": "Based on the provided evidence, the Sandisk factory equipment model with the highest failure rate is the 8TB HDD model. The evidence states that \"Failure rates vary significantly between different types of equipment,\" indicating that the 8TB HDD model likely has higher failure rates compared to other models.\n\nRetrieved sources:\n1. NIST.AMS.100-2 \u2014 PDF page 37\n2. NIST.AMS.100-2 \u2014 PDF page 55\n3. NIST.AMS.100-2 \u2014 PDF page 11",
+      "raw_model_answer": "Based on the provided evidence, the Sandisk factory equipment model with the highest failure rate is the 8TB HDD model. The evidence states that \"Failure rates vary significantly between different types of equipment,\" indicating that the 8TB HDD model likely has higher failure rates compared to other models.",
+      "answer_point_coverage": 0.0,
+      "answer_point_hits": [],
+      "answer_point_misses": [],
+      "all_answer_points_hit": false,
+      "expected_source_present": null,
+      "refusal_detected": false,
+      "correct_unsupported_refusal": false,
+      "input_tokens": 488,
+      "sources_in_prompt": 3,
+      "unique_source_pages": 3,
+      "latency_seconds": 10.87117969999963,
+      "retrieved_sources": [
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 37,
+          "retrieval_rank": 1,
+          "retrieval_similarity": 0.510385274887085
+        },
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 55,
+          "retrieval_rank": 2,
+          "retrieval_similarity": 0.5099719762802124
+        },
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 11,
+          "retrieval_rank": 3,
+          "retrieval_similarity": 0.499176949262619
+        }
+      ]
+    },
+    {
+      "configuration": "grounded_top5",
+      "prompt_style": "grounded",
+      "top_k": 5,
+      "question_id": "Q01",
+      "question": "How does reactive maintenance differ from preventive maintenance?",
+      "supported": true,
+      "top_similarity": 0.7775448560714722,
+      "evidence_gate_triggered": false,
+      "llm_called": true,
+      "answer": "Reactive maintenance involves doing nothing until something breaks, fails, or stops operating within required specifications, while preventive maintenance focuses on identifying potential problems before they occur.\n\nRetrieved sources:\n1. NIST.AMS.100-34 \u2014 PDF page 47\n2. NIST.AMS.100-34 \u2014 PDF page 7\n3. NIST.AMS.100-34 \u2014 PDF page 14\n4. NIST.AMS.100-34 \u2014 PDF page 43\n5. NIST.AMS.100-18 \u2014 PDF page 11",
+      "raw_model_answer": "Reactive maintenance involves doing nothing until something breaks, fails, or stops operating within required specifications, while preventive maintenance focuses on identifying potential problems before they occur.",
+      "answer_point_coverage": 0.0,
+      "answer_point_hits": [],
+      "answer_point_misses": [
+        "reactive occurs after breakdown or need for repair",
+        "preventive is scheduled in advance"
+      ],
+      "all_answer_points_hit": false,
+      "expected_source_present": true,
+      "refusal_detected": false,
+      "correct_unsupported_refusal": false,
+      "input_tokens": 769,
+      "sources_in_prompt": 5,
+      "unique_source_pages": 5,
+      "latency_seconds": 7.846028300000398,
+      "retrieved_sources": [
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 47,
+          "retrieval_rank": 1,
+          "retrieval_similarity": 0.7775448560714722
+        },
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 7,
+          "retrieval_rank": 2,
+          "retrieval_similarity": 0.7765377759933472
+        },
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 14,
+          "retrieval_rank": 3,
+          "retrieval_similarity": 0.7691890001296997
+        },
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 43,
+          "retrieval_rank": 4,
+          "retrieval_similarity": 0.7611863613128662
+        },
+        {
+          "document": "NIST.AMS.100-18",
+          "pdf_page": 11,
+          "retrieval_rank": 5,
+          "retrieval_similarity": 0.753417432308197
+        }
+      ]
+    },
+    {
+      "configuration": "grounded_top5",
+      "prompt_style": "grounded",
+      "top_k": 5,
+      "question_id": "Q02",
+      "question": "Which measurable units can be used to schedule preventive maintenance?",
+      "supported": true,
+      "top_similarity": 0.6771284937858582,
+      "evidence_gate_triggered": false,
+      "llm_called": true,
+      "answer": "Based on the information provided, the measurable units that can be used to schedule preventive maintenance include:\n\n1. Time (months or years)\n2. Distance (kilometers or miles)\n\nThese units allow for monitoring the frequency and duration of preventive maintenance tasks.\n\nRetrieved sources:\n1. NIST.AMS.100-34 \u2014 PDF page 15\n2. NIST.AMS.100-18 \u2014 PDF page 10\n3. NIST.AMS.100-18 \u2014 PDF page 15\n4. NIST.AMS.100-34 \u2014 PDF page 9\n5. NIST.AMS.100-18 \u2014 PDF page 11",
+      "raw_model_answer": "Based on the information provided, the measurable units that can be used to schedule preventive maintenance include:\n\n1. Time (months or years)\n2. Distance (kilometers or miles)\n\nThese units allow for monitoring the frequency and duration of preventive maintenance tasks.",
+      "answer_point_coverage": 0.6666666666666666,
+      "answer_point_hits": [
+        "time",
+        "distance"
+      ],
+      "answer_point_misses": [
+        "runtime or operating cycles"
+      ],
+      "all_answer_points_hit": false,
+      "expected_source_present": true,
+      "refusal_detected": false,
+      "correct_unsupported_refusal": false,
+      "input_tokens": 803,
+      "sources_in_prompt": 5,
+      "unique_source_pages": 5,
+      "latency_seconds": 11.294133699999293,
+      "retrieved_sources": [
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 15,
+          "retrieval_rank": 1,
+          "retrieval_similarity": 0.6771284937858582
+        },
+        {
+          "document": "NIST.AMS.100-18",
+          "pdf_page": 10,
+          "retrieval_rank": 2,
+          "retrieval_similarity": 0.6026455163955688
+        },
+        {
+          "document": "NIST.AMS.100-18",
+          "pdf_page": 15,
+          "retrieval_rank": 3,
+          "retrieval_similarity": 0.5845104455947876
+        },
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 9,
+          "retrieval_rank": 4,
+          "retrieval_similarity": 0.5833455324172974
+        },
+        {
+          "document": "NIST.AMS.100-18",
+          "pdf_page": 11,
+          "retrieval_rank": 5,
+          "retrieval_similarity": 0.5733804106712341
+        }
+      ]
+    },
+    {
+      "configuration": "grounded_top5",
+      "prompt_style": "grounded",
+      "top_k": 5,
+      "question_id": "Q03",
+      "question": "What information is used to decide when predictive maintenance should be performed?",
+      "supported": true,
+      "top_similarity": 0.7772319912910461,
+      "evidence_gate_triggered": false,
+      "llm_called": true,
+      "answer": "According to the evidence provided, the key point that emerged is that predictive maintenance strategies are used to assess the condition of in-service equipment and determine when maintenance should be performed. This assessment includes factors like the availability of plant resources and budgets, difficulty in performing maintenance tasks in a timely manner due to limited resources and budget constraints, and identifying false positives that need to be reduced.\n\nRetrieved sources:\n1. NIST.AMS.100-18 \u2014 PDF page 20\n2. NIST.AMS.100-2 \u2014 PDF page 18\n3. NIST.AMS.100-18 \u2014 PDF page 10\n4. NIST.AMS.100-18 \u2014 PDF page 7",
+      "raw_model_answer": "According to the evidence provided, the key point that emerged is that predictive maintenance strategies are used to assess the condition of in-service equipment and determine when maintenance should be performed. This assessment includes factors like the availability of plant resources and budgets, difficulty in performing maintenance tasks in a timely manner due to limited resources and budget constraints, and identifying false positives that need to be reduced.",
+      "answer_point_coverage": 0.5,
+      "answer_point_hits": [
+        "reliability or condition measurements"
+      ],
+      "answer_point_misses": [
+        "sensor and historical data or models"
+      ],
+      "all_answer_points_hit": false,
+      "expected_source_present": true,
+      "refusal_detected": false,
+      "correct_unsupported_refusal": false,
+      "input_tokens": 766,
+      "sources_in_prompt": 5,
+      "unique_source_pages": 4,
+      "latency_seconds": 15.074365000000398,
+      "retrieved_sources": [
+        {
+          "document": "NIST.AMS.100-18",
+          "pdf_page": 20,
+          "retrieval_rank": 1,
+          "retrieval_similarity": 0.7772319912910461
+        },
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 18,
+          "retrieval_rank": 3,
+          "retrieval_similarity": 0.748634934425354
+        },
+        {
+          "document": "NIST.AMS.100-18",
+          "pdf_page": 10,
+          "retrieval_rank": 4,
+          "retrieval_similarity": 0.7462438344955444
+        },
+        {
+          "document": "NIST.AMS.100-18",
+          "pdf_page": 7,
+          "retrieval_rank": 5,
+          "retrieval_similarity": 0.7457072734832764
+        }
+      ]
+    },
+    {
+      "configuration": "grounded_top5",
+      "prompt_style": "grounded",
+      "top_k": 5,
+      "question_id": "Q04",
+      "question": "What is a disadvantage of performing excessive preventive maintenance?",
+      "supported": true,
+      "top_similarity": 0.6573714017868042,
+      "evidence_gate_triggered": false,
+      "llm_called": true,
+      "answer": "Based on the provided information, excessive preventive maintenance may lead to increased downtime and higher defect rates compared to reactive maintenance.\n\nRetrieved sources:\n1. NIST.AMS.100-34 \u2014 PDF page 5\n2. NIST.AMS.100-34 \u2014 PDF page 13\n3. NIST.AMS.100-34 \u2014 PDF page 46\n4. NIST.AMS.100-34 \u2014 PDF page 41\n5. NIST.AMS.100-34 \u2014 PDF page 17",
+      "raw_model_answer": "Based on the provided information, excessive preventive maintenance may lead to increased downtime and higher defect rates compared to reactive maintenance.",
+      "answer_point_coverage": 0.0,
+      "answer_point_hits": [],
+      "answer_point_misses": [
+        "unnecessary labor or material cost",
+        "planned maintenance still creates downtime"
+      ],
+      "all_answer_points_hit": false,
+      "expected_source_present": false,
+      "refusal_detected": false,
+      "correct_unsupported_refusal": false,
+      "input_tokens": 593,
+      "sources_in_prompt": 5,
+      "unique_source_pages": 5,
+      "latency_seconds": 5.712390900000173,
+      "retrieved_sources": [
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 5,
+          "retrieval_rank": 1,
+          "retrieval_similarity": 0.6573714017868042
+        },
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 13,
+          "retrieval_rank": 2,
+          "retrieval_similarity": 0.6526138186454773
+        },
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 46,
+          "retrieval_rank": 3,
+          "retrieval_similarity": 0.6391851305961609
+        },
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 41,
+          "retrieval_rank": 4,
+          "retrieval_similarity": 0.6388776302337646
+        },
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 17,
+          "retrieval_rank": 5,
+          "retrieval_similarity": 0.638862133026123
+        }
+      ]
+    },
+    {
+      "configuration": "grounded_top5",
+      "prompt_style": "grounded",
+      "top_k": 5,
+      "question_id": "Q05",
+      "question": "What performance characteristics are near-term goals for PHM performance assessment?",
+      "supported": true,
+      "top_similarity": 0.755857527256012,
+      "evidence_gate_triggered": false,
+      "llm_called": true,
+      "answer": "Near-term goals for PHM performance assessment focus on evaluation of PHM as well as incorporating the key performance characteristics that are critical to manufacturing, including failure prediction/ recovery, defect reduction, and early detection of events.\n\nRetrieved sources:\n1. NIST.AMS.100-2 \u2014 PDF page 33\n2. NIST.AMS.100-2 \u2014 PDF page 32\n3. NIST.AMS.100-2 \u2014 PDF page 38\n4. NIST.AMS.100-2 \u2014 PDF page 7",
+      "raw_model_answer": "Near-term goals for PHM performance assessment focus on evaluation of PHM as well as incorporating the key performance characteristics that are critical to manufacturing, including failure prediction/ recovery, defect reduction, and early detection of events.",
+      "answer_point_coverage": 1.0,
+      "answer_point_hits": [
+        "failure prediction or recovery",
+        "defect reduction",
+        "early event or anomaly detection"
+      ],
+      "answer_point_misses": [],
+      "all_answer_points_hit": true,
+      "expected_source_present": true,
+      "refusal_detected": false,
+      "correct_unsupported_refusal": false,
+      "input_tokens": 726,
+      "sources_in_prompt": 5,
+      "unique_source_pages": 4,
+      "latency_seconds": 9.02260650000062,
+      "retrieved_sources": [
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 33,
+          "retrieval_rank": 1,
+          "retrieval_similarity": 0.755857527256012
+        },
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 32,
+          "retrieval_rank": 2,
+          "retrieval_similarity": 0.7270911335945129
+        },
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 38,
+          "retrieval_rank": 4,
+          "retrieval_similarity": 0.6667876839637756
+        },
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 7,
+          "retrieval_rank": 5,
+          "retrieval_similarity": 0.6525479555130005
+        }
+      ]
+    },
+    {
+      "configuration": "grounded_top5",
+      "prompt_style": "grounded",
+      "top_k": 5,
+      "question_id": "Q06",
+      "question": "What safety and maintainability benefits are associated with prognostics and health management?",
+      "supported": true,
+      "top_similarity": 0.8059178590774536,
+      "evidence_gate_triggered": false,
+      "llm_called": true,
+      "answer": "Safety and maintainability benefits associated with prognostics and health management include advancing warning of failure and eliminating redundant inspections, minimizing unscheduled maintenance, and decreasing test equipment requirement.\n\nRetrieved sources:\n1. NIST.AMS.100-18 \u2014 PDF page 17\n2. NIST.AMS.100-2 \u2014 PDF page 7\n3. NIST.AMS.100-2 \u2014 PDF page 10",
+      "raw_model_answer": "Safety and maintainability benefits associated with prognostics and health management include advancing warning of failure and eliminating redundant inspections, minimizing unscheduled maintenance, and decreasing test equipment requirement.",
+      "answer_point_coverage": 0.5,
+      "answer_point_hits": [
+        "reduced inspection or unscheduled maintenance"
+      ],
+      "answer_point_misses": [
+        "advance warning and avoiding catastrophic failure"
+      ],
+      "all_answer_points_hit": false,
+      "expected_source_present": true,
+      "refusal_detected": false,
+      "correct_unsupported_refusal": false,
+      "input_tokens": 600,
+      "sources_in_prompt": 5,
+      "unique_source_pages": 3,
+      "latency_seconds": 7.6624972999998135,
+      "retrieved_sources": [
+        {
+          "document": "NIST.AMS.100-18",
+          "pdf_page": 17,
+          "retrieval_rank": 1,
+          "retrieval_similarity": 0.8059178590774536
+        },
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 7,
+          "retrieval_rank": 2,
+          "retrieval_similarity": 0.6886851787567139
+        },
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 10,
+          "retrieval_rank": 3,
+          "retrieval_similarity": 0.6573432087898254
+        }
+      ]
+    },
+    {
+      "configuration": "grounded_top5",
+      "prompt_style": "grounded",
+      "top_k": 5,
+      "question_id": "Q07",
+      "question": "What are cascading effects in direct maintenance and repair costs?",
+      "supported": true,
+      "top_similarity": 0.7740808129310608,
+      "evidence_gate_triggered": false,
+      "llm_called": true,
+      "answer": "Cascading effects refer to subsequent damage caused by a breakdown of a machine (e.g., repair).\n\nRetrieved sources:\n1. NIST.AMS.100-34 \u2014 PDF page 22\n2. NIST.AMS.100-18 \u2014 PDF page 8\n3. NIST.AMS.100-18 \u2014 PDF page 25\n4. NIST.AMS.100-34 \u2014 PDF page 12",
+      "raw_model_answer": "Cascading effects refer to subsequent damage caused by a breakdown of a machine (e.g., repair).",
+      "answer_point_coverage": 1.0,
+      "answer_point_hits": [
+        "subsequent damage caused by machine breakdown"
+      ],
+      "answer_point_misses": [],
+      "all_answer_points_hit": true,
+      "expected_source_present": true,
+      "refusal_detected": false,
+      "correct_unsupported_refusal": false,
+      "input_tokens": 724,
+      "sources_in_prompt": 5,
+      "unique_source_pages": 4,
+      "latency_seconds": 5.242198800000551,
+      "retrieved_sources": [
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 22,
+          "retrieval_rank": 1,
+          "retrieval_similarity": 0.7740808129310608
+        },
+        {
+          "document": "NIST.AMS.100-18",
+          "pdf_page": 8,
+          "retrieval_rank": 2,
+          "retrieval_similarity": 0.7584308981895447
+        },
+        {
+          "document": "NIST.AMS.100-18",
+          "pdf_page": 25,
+          "retrieval_rank": 3,
+          "retrieval_similarity": 0.7492192387580872
+        },
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 12,
+          "retrieval_rank": 4,
+          "retrieval_similarity": 0.7108821868896484
+        }
+      ]
+    },
+    {
+      "configuration": "grounded_top5",
+      "prompt_style": "grounded",
+      "top_k": 5,
+      "question_id": "Q08",
+      "question": "How does condition-based maintenance with prognostics use health information?",
+      "supported": true,
+      "top_similarity": 0.7375563383102417,
+      "evidence_gate_triggered": false,
+      "llm_called": true,
+      "answer": "Condition-based maintenance with prognostics uses health information to predict a failure's evolution and diagnose failures before they occur.\n\nRetrieved sources:\n1. NIST.AMS.100-18 \u2014 PDF page 17\n2. NIST.AMS.100-2 \u2014 PDF page 16\n3. NIST.AMS.100-2 \u2014 PDF page 10\n4. NIST.AMS.100-18 \u2014 PDF page 20",
+      "raw_model_answer": "Condition-based maintenance with prognostics uses health information to predict a failure's evolution and diagnose failures before they occur.",
+      "answer_point_coverage": 1.0,
+      "answer_point_hits": [
+        "uses assessed health or diagnostic output",
+        "predicts failure evolution"
+      ],
+      "answer_point_misses": [],
+      "all_answer_points_hit": true,
+      "expected_source_present": true,
+      "refusal_detected": false,
+      "correct_unsupported_refusal": false,
+      "input_tokens": 743,
+      "sources_in_prompt": 5,
+      "unique_source_pages": 4,
+      "latency_seconds": 5.737073199999941,
+      "retrieved_sources": [
+        {
+          "document": "NIST.AMS.100-18",
+          "pdf_page": 17,
+          "retrieval_rank": 1,
+          "retrieval_similarity": 0.7375563383102417
+        },
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 16,
+          "retrieval_rank": 3,
+          "retrieval_similarity": 0.7192909717559814
+        },
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 10,
+          "retrieval_rank": 4,
+          "retrieval_similarity": 0.6816716194152832
+        },
+        {
+          "document": "NIST.AMS.100-18",
+          "pdf_page": 20,
+          "retrieval_rank": 5,
+          "retrieval_similarity": 0.6686245203018188
+        }
+      ]
+    },
+    {
+      "configuration": "grounded_top5",
+      "prompt_style": "grounded",
+      "top_k": 5,
+      "question_id": "Q09",
+      "question": "Why is measuring return on investment for PHM challenging?",
+      "supported": true,
+      "top_similarity": 0.6780706644058228,
+      "evidence_gate_triggered": false,
+      "llm_called": true,
+      "answer": "Measuring return on investment for PHM is challenging because it often requires measuring over equipment life and maintenance cycles, which can be difficult to quantify reliably.\n\nRetrieved sources:\n1. NIST.AMS.100-2 \u2014 PDF page 56\n2. NIST.AMS.100-18 \u2014 PDF page 43\n3. NIST.AMS.100-2 \u2014 PDF page 9\n4. NIST.AMS.100-2 \u2014 PDF page 20",
+      "raw_model_answer": "Measuring return on investment for PHM is challenging because it often requires measuring over equipment life and maintenance cycles, which can be difficult to quantify reliably.",
+      "answer_point_coverage": 0.3333333333333333,
+      "answer_point_hits": [
+        "benefits may require equipment life cycles to measure"
+      ],
+      "answer_point_misses": [
+        "no standard or reliable ROI method",
+        "limitations in models data methods or metrics"
+      ],
+      "all_answer_points_hit": false,
+      "expected_source_present": true,
+      "refusal_detected": false,
+      "correct_unsupported_refusal": false,
+      "input_tokens": 786,
+      "sources_in_prompt": 5,
+      "unique_source_pages": 4,
+      "latency_seconds": 6.84441119999974,
+      "retrieved_sources": [
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 56,
+          "retrieval_rank": 1,
+          "retrieval_similarity": 0.6780706644058228
+        },
+        {
+          "document": "NIST.AMS.100-18",
+          "pdf_page": 43,
+          "retrieval_rank": 2,
+          "retrieval_similarity": 0.6095651388168335
+        },
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 9,
+          "retrieval_rank": 4,
+          "retrieval_similarity": 0.5669163465499878
+        },
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 20,
+          "retrieval_rank": 5,
+          "retrieval_similarity": 0.5526833534240723
+        }
+      ]
+    },
+    {
+      "configuration": "grounded_top5",
+      "prompt_style": "grounded",
+      "top_k": 5,
+      "question_id": "Q10",
+      "question": "How do the labor and parts cost characteristics of reactive and predictive maintenance compare?",
+      "supported": true,
+      "top_similarity": 0.7547684907913208,
+      "evidence_gate_triggered": false,
+      "llm_called": true,
+      "answer": "According to the evidence, reactive maintenance has higher labor and part costs compared to predictive maintenance.\n\nRetrieved sources:\n1. NIST.AMS.100-34 \u2014 PDF page 7\n2. NIST.AMS.100-34 \u2014 PDF page 43\n3. NIST.AMS.100-18 \u2014 PDF page 15\n4. NIST.AMS.100-18 \u2014 PDF page 11\n5. NIST.AMS.100-34 \u2014 PDF page 10",
+      "raw_model_answer": "According to the evidence, reactive maintenance has higher labor and part costs compared to predictive maintenance.",
+      "answer_point_coverage": 0.5,
+      "answer_point_hits": [
+        "reactive has high labor and parts costs"
+      ],
+      "answer_point_misses": [
+        "predictive has low labor and medium parts costs"
+      ],
+      "all_answer_points_hit": false,
+      "expected_source_present": true,
+      "refusal_detected": false,
+      "correct_unsupported_refusal": false,
+      "input_tokens": 747,
+      "sources_in_prompt": 5,
+      "unique_source_pages": 5,
+      "latency_seconds": 4.789114100000006,
+      "retrieved_sources": [
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 7,
+          "retrieval_rank": 1,
+          "retrieval_similarity": 0.7547684907913208
+        },
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 43,
+          "retrieval_rank": 2,
+          "retrieval_similarity": 0.7504749298095703
+        },
+        {
+          "document": "NIST.AMS.100-18",
+          "pdf_page": 15,
+          "retrieval_rank": 3,
+          "retrieval_similarity": 0.7383952140808105
+        },
+        {
+          "document": "NIST.AMS.100-18",
+          "pdf_page": 11,
+          "retrieval_rank": 4,
+          "retrieval_similarity": 0.730932354927063
+        },
+        {
+          "document": "NIST.AMS.100-34",
+          "pdf_page": 10,
+          "retrieval_rank": 5,
+          "retrieval_similarity": 0.7268069982528687
+        }
+      ]
+    },
+    {
+      "configuration": "grounded_top5",
+      "prompt_style": "grounded",
+      "top_k": 5,
+      "question_id": "U01",
+      "question": "What lubricant viscosity should be used for a Sandisk assembly machine?",
+      "supported": false,
+      "top_similarity": 0.3362870216369629,
+      "evidence_gate_triggered": true,
+      "llm_called": false,
+      "answer": "INSUFFICIENT EVIDENCE",
+      "raw_model_answer": "",
+      "answer_point_coverage": 0.0,
+      "answer_point_hits": [],
+      "answer_point_misses": [],
+      "all_answer_points_hit": false,
+      "expected_source_present": null,
+      "refusal_detected": true,
+      "correct_unsupported_refusal": true,
+      "input_tokens": 0,
+      "sources_in_prompt": 0,
+      "unique_source_pages": 0,
+      "latency_seconds": 0.0,
+      "retrieved_sources": []
+    },
+    {
+      "configuration": "grounded_top5",
+      "prompt_style": "grounded",
+      "top_k": 5,
+      "question_id": "U02",
+      "question": "What operating temperature should Sandisk use for its SMT placement machine?",
+      "supported": false,
+      "top_similarity": 0.3585525155067444,
+      "evidence_gate_triggered": true,
+      "llm_called": false,
+      "answer": "INSUFFICIENT EVIDENCE",
+      "raw_model_answer": "",
+      "answer_point_coverage": 0.0,
+      "answer_point_hits": [],
+      "answer_point_misses": [],
+      "all_answer_points_hit": false,
+      "expected_source_present": null,
+      "refusal_detected": true,
+      "correct_unsupported_refusal": true,
+      "input_tokens": 0,
+      "sources_in_prompt": 0,
+      "unique_source_pages": 0,
+      "latency_seconds": 0.0,
+      "retrieved_sources": []
+    },
+    {
+      "configuration": "grounded_top5",
+      "prompt_style": "grounded",
+      "top_k": 5,
+      "question_id": "U03",
+      "question": "Which Sandisk factory equipment model has the highest failure rate?",
+      "supported": false,
+      "top_similarity": 0.510385274887085,
+      "evidence_gate_triggered": false,
+      "llm_called": true,
+      "answer": "Based on the provided evidence, Sandisk's factory equipment model with the highest failure rate is the **SSD** (Solid State Drive). The evidence states that SSDs have higher failure rates compared to HDDs due to their reliance on solid-state technology.\n\nRetrieved sources:\n1. NIST.AMS.100-2 \u2014 PDF page 37\n2. NIST.AMS.100-2 \u2014 PDF page 55\n3. NIST.AMS.100-2 \u2014 PDF page 11\n4. NIST.AMS.100-2 \u2014 PDF page 10\n5. NIST.AMS.100-2 \u2014 PDF page 57",
+      "raw_model_answer": "Based on the provided evidence, Sandisk's factory equipment model with the highest failure rate is the **SSD** (Solid State Drive). The evidence states that SSDs have higher failure rates compared to HDDs due to their reliance on solid-state technology.",
+      "answer_point_coverage": 0.0,
+      "answer_point_hits": [],
+      "answer_point_misses": [],
+      "all_answer_points_hit": false,
+      "expected_source_present": null,
+      "refusal_detected": false,
+      "correct_unsupported_refusal": false,
+      "input_tokens": 650,
+      "sources_in_prompt": 5,
+      "unique_source_pages": 5,
+      "latency_seconds": 9.116134099998817,
+      "retrieved_sources": [
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 37,
+          "retrieval_rank": 1,
+          "retrieval_similarity": 0.510385274887085
+        },
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 55,
+          "retrieval_rank": 2,
+          "retrieval_similarity": 0.5099719762802124
+        },
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 11,
+          "retrieval_rank": 3,
+          "retrieval_similarity": 0.499176949262619
+        },
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 10,
+          "retrieval_rank": 4,
+          "retrieval_similarity": 0.4764683246612549
+        },
+        {
+          "document": "NIST.AMS.100-2",
+          "pdf_page": 57,
+          "retrieval_rank": 5,
+          "retrieval_similarity": 0.4695547819137573
+        }
+      ]
+    }
+  ]
+}

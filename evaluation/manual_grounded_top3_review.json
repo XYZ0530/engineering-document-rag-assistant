@@ -1,0 +1,72 @@
+[
+  {
+    "question_id": "Q01",
+    "manual_answer_point_coverage": 0.5,
+    "verdict": "partially supported",
+    "primary_failure": "generation omission plus phrase-matcher false negative",
+    "review": "The reactive-maintenance distinction is correct, although 'until something breaks' did not match the accepted phrase 'until it breaks'. The preventive description does not clearly state scheduled predetermined intervals and partially resembles predictive maintenance."
+  },
+  {
+    "question_id": "Q02",
+    "manual_answer_point_coverage": 1.0,
+    "verdict": "supported",
+    "primary_failure": "none",
+    "review": "The answer covers time, distance, and operating cycles; accepted evidence pages reached the prompt."
+  },
+  {
+    "question_id": "Q03",
+    "manual_answer_point_coverage": 0.5,
+    "verdict": "partially supported",
+    "primary_failure": "generation omission",
+    "review": "The answer covers equipment condition but omits the requested sensor/observed data, historical data, and model information even though accepted evidence reached the prompt."
+  },
+  {
+    "question_id": "Q04",
+    "manual_answer_point_coverage": 0.0,
+    "verdict": "unsupported",
+    "primary_failure": "retrieval failure",
+    "review": "Pages 15-16 containing unnecessary labor/material costs and planned downtime did not reach Top-3. The generated benefits and 'counterintuitive results' do not answer the question and are not adequately grounded."
+  },
+  {
+    "question_id": "Q05",
+    "manual_answer_point_coverage": 1.0,
+    "verdict": "supported",
+    "primary_failure": "none",
+    "review": "The answer accurately includes failure prediction/recovery, defect reduction, and early event detection from PDF page 33."
+  },
+  {
+    "question_id": "Q06",
+    "manual_answer_point_coverage": 0.75,
+    "verdict": "mostly supported",
+    "primary_failure": "phrase-matcher false negative plus minor omission",
+    "review": "The answer includes advanced warning, redundant inspections, unscheduled maintenance, and test-equipment requirements. The matcher missed 'advanced' versus 'advance'; avoiding catastrophic failure was omitted."
+  },
+  {
+    "question_id": "Q07",
+    "manual_answer_point_coverage": 1.0,
+    "verdict": "supported",
+    "primary_failure": "none",
+    "review": "The definition correctly states that cascading effects are subsequent damage caused by machine breakdown."
+  },
+  {
+    "question_id": "Q08",
+    "manual_answer_point_coverage": 0.75,
+    "verdict": "mostly supported",
+    "primary_failure": "minor generation omission",
+    "review": "The answer correctly states prediction of failure evolution from health information, but does not specify assessed health or diagnostic fault-classifier output."
+  },
+  {
+    "question_id": "Q09",
+    "manual_answer_point_coverage": 0.3333333333,
+    "verdict": "partially supported",
+    "primary_failure": "generation omission",
+    "review": "The answer covers measurement across equipment life and maintenance cycles and mentions high enabling cost, but omits the lack of standardized ROI methods and limitations in predictive models, data, methods, and metrics."
+  },
+  {
+    "question_id": "Q10",
+    "manual_answer_point_coverage": 0.5,
+    "verdict": "partially supported",
+    "primary_failure": "generation omission",
+    "review": "The answer correctly gives the relative direction of costs, but omits the specific predictive-maintenance profile of low labor and medium parts cost."
+  }
+]

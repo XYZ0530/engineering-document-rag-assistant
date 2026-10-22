@@ -1,0 +1,12 @@
+{
+  "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+  "embedding_file": "embeddings_128.npy",
+  "chunk_file": "data/processed/chunks_128.jsonl",
+  "chunk_file_sha256": "17287826ea8a05dba17057a0a068e079d61badcb1bf83c3aae7b264a44b8b328",
+  "rows": 972,
+  "dimensions": 384,
+  "dtype": "float32",
+  "first_chunk_id": "NIST.AMS.100-18-p001-t128-c001",
+  "last_chunk_id": "NIST.AMS.100-34-p052-t128-c004",
+  "normalized": true
+}

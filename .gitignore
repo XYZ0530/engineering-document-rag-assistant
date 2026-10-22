@@ -1,0 +1,16 @@
+# Downloads and local runtime state
+models/
+.hf_cache/
+.cache/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+*.log
+# Preserve small embedding arrays and manifests as reproducibility evidence.
+# Project-only exports are generated separately.
+github-upload/

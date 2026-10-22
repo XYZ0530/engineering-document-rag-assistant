@@ -1,0 +1,48 @@
+{
+  "documents_processed": 3,
+  "total_retained_pages": 159,
+  "documents": [
+    {
+      "document": "NIST.AMS.100-18",
+      "filename": "NIST.AMS.100-18.pdf",
+      "total_pdf_pages": 45,
+      "retained_pages": 43,
+      "skipped_pages": [
+        4,
+        38
+      ],
+      "repeated_edge_lines_removed": [
+        "This publication is available free of charge from: https://doi.org/10.6028/NIST.AMS.100-18"
+      ],
+      "replacement_characters_in_raw_text": 0
+    },
+    {
+      "document": "NIST.AMS.100-2",
+      "filename": "NIST.AMS.100-2.pdf",
+      "total_pdf_pages": 66,
+      "retained_pages": 64,
+      "skipped_pages": [
+        2,
+        4
+      ],
+      "repeated_edge_lines_removed": [
+        "Health Management of Smart Manufacturing System",
+        "Measurement Science Roadmap for Prognostics and",
+        "This publication is available free of charge from: http://dx.doi.org/10.6028/NIST.AMS.100-2",
+        "__________________________________________________________________________________"
+      ],
+      "replacement_characters_in_raw_text": 0
+    },
+    {
+      "document": "NIST.AMS.100-34",
+      "filename": "NIST.AMS.100-34.pdf",
+      "total_pdf_pages": 52,
+      "retained_pages": 52,
+      "skipped_pages": [],
+      "repeated_edge_lines_removed": [
+        "This publication is available free of charge from: https://doi.org/10.6028/NIST.AMS.100-34"
+      ],
+      "replacement_characters_in_raw_text": 0
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "question_id": "H01",
+    "question": "What is the warranty period for a Sandisk SMT placement machine?"
+  },
+  {
+    "question_id": "H02",
+    "question": "Which Batu Kawan production line had the most downtime in 2025?"
+  },
+  {
+    "question_id": "H03",
+    "question": "What torque setting should be used for a Sandisk assembly fixture?"
+  },
+  {
+    "question_id": "H04",
+    "question": "Which technician completed the most maintenance work last month?"
+  },
+  {
+    "question_id": "H05",
+    "question": "What was yesterday's defect rate at the Sandisk Batu Kawan facility?"
+  }
+]

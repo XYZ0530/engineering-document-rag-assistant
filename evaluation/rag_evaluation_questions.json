@@ -1,0 +1,149 @@
+[
+  {
+    "question_id": "Q01",
+    "question": "How does reactive maintenance differ from preventive maintenance?",
+    "supported": true,
+    "expected_answer_points": [
+      {"label": "reactive occurs after breakdown or need for repair", "match_any": ["until it breaks", "after failure", "after breakdown", "needs repairs", "on demand"]},
+      {"label": "preventive is scheduled in advance", "match_any": ["scheduled", "predetermined", "pre-determined", "interval", "time-based", "usage-based"]}
+    ],
+    "expected_sources": [
+      {"document": "NIST.AMS.100-18", "pdf_pages": [10, 11]},
+      {"document": "NIST.AMS.100-34", "pdf_pages": [9, 14]}
+    ]
+  },
+  {
+    "question_id": "Q02",
+    "question": "Which measurable units can be used to schedule preventive maintenance?",
+    "supported": true,
+    "expected_answer_points": [
+      {"label": "time", "match_any": ["time", "months"]},
+      {"label": "distance", "match_any": ["distance", "miles", "kilometers"]},
+      {"label": "runtime or operating cycles", "match_any": ["run time", "runtime", "cycles", "usage"]}
+    ],
+    "expected_sources": [
+      {"document": "NIST.AMS.100-34", "pdf_pages": [15]},
+      {"document": "NIST.AMS.100-18", "pdf_pages": [10]}
+    ]
+  },
+  {
+    "question_id": "Q03",
+    "question": "What information is used to decide when predictive maintenance should be performed?",
+    "supported": true,
+    "expected_answer_points": [
+      {"label": "reliability or condition measurements", "match_any": ["reliability", "condition", "temperature", "noise", "vibration"]},
+      {"label": "sensor and historical data or models", "match_any": ["sensor data", "historical data", "observed data", "models", "failure prediction"]}
+    ],
+    "expected_sources": [
+      {"document": "NIST.AMS.100-34", "pdf_pages": [9, 16]},
+      {"document": "NIST.AMS.100-2", "pdf_pages": [18]}
+    ]
+  },
+  {
+    "question_id": "Q04",
+    "question": "What is a disadvantage of performing excessive preventive maintenance?",
+    "supported": true,
+    "expected_answer_points": [
+      {"label": "unnecessary labor or material cost", "match_any": ["unnecessary labor", "labor hours", "materials", "wasted money", "excess cost", "costly"]},
+      {"label": "planned maintenance still creates downtime", "match_any": ["planned downtime", "still downtime", "equipment is down", "less opportunity"]}
+    ],
+    "expected_sources": [
+      {"document": "NIST.AMS.100-34", "pdf_pages": [15, 16]}
+    ]
+  },
+  {
+    "question_id": "Q05",
+    "question": "What performance characteristics are near-term goals for PHM performance assessment?",
+    "supported": true,
+    "expected_answer_points": [
+      {"label": "failure prediction or recovery", "match_any": ["failure prediction", "predict failure", "recovery"]},
+      {"label": "defect reduction", "match_any": ["defect reduction", "defective parts", "yield improvement"]},
+      {"label": "early event or anomaly detection", "match_any": ["early detection", "anomaly detection", "detection and diagnosis"]}
+    ],
+    "expected_sources": [
+      {"document": "NIST.AMS.100-2", "pdf_pages": [33]}
+    ]
+  },
+  {
+    "question_id": "Q06",
+    "question": "What safety and maintainability benefits are associated with prognostics and health management?",
+    "supported": true,
+    "expected_answer_points": [
+      {"label": "advance warning and avoiding catastrophic failure", "match_any": ["advance warning", "catastrophic failure"]},
+      {"label": "reduced inspection or unscheduled maintenance", "match_any": ["redundant inspections", "unscheduled maintenance", "test equipment"]}
+    ],
+    "expected_sources": [
+      {"document": "NIST.AMS.100-18", "pdf_pages": [17]}
+    ]
+  },
+  {
+    "question_id": "Q07",
+    "question": "What are cascading effects in direct maintenance and repair costs?",
+    "supported": true,
+    "expected_answer_points": [
+      {"label": "subsequent damage caused by machine breakdown", "match_any": ["subsequent damage", "damage caused", "breakdown of a machine", "machine breakdown"]}
+    ],
+    "expected_sources": [
+      {"document": "NIST.AMS.100-18", "pdf_pages": [8, 25]},
+      {"document": "NIST.AMS.100-34", "pdf_pages": [22]}
+    ]
+  },
+  {
+    "question_id": "Q08",
+    "question": "How does condition-based maintenance with prognostics use health information?",
+    "supported": true,
+    "expected_answer_points": [
+      {"label": "uses assessed health or diagnostic output", "match_any": ["assessed health", "health information", "diagnostic", "fault classifier"]},
+      {"label": "predicts failure evolution", "match_any": ["predict a failure", "failure evolution", "prognostic"]}
+    ],
+    "expected_sources": [
+      {"document": "NIST.AMS.100-2", "pdf_pages": [16]}
+    ]
+  },
+  {
+    "question_id": "Q09",
+    "question": "Why is measuring return on investment for PHM challenging?",
+    "supported": true,
+    "expected_answer_points": [
+      {"label": "no standard or reliable ROI method", "match_any": ["no standard", "not readily available", "not well-justified", "quantifying roi"]},
+      {"label": "limitations in models data methods or metrics", "match_any": ["predictive models", "data", "methods", "metrics"]},
+      {"label": "benefits may require equipment life cycles to measure", "match_any": ["equipment life", "maintenance cycles", "measured over"]}
+    ],
+    "expected_sources": [
+      {"document": "NIST.AMS.100-2", "pdf_pages": [56]}
+    ]
+  },
+  {
+    "question_id": "Q10",
+    "question": "How do the labor and parts cost characteristics of reactive and predictive maintenance compare?",
+    "supported": true,
+    "expected_answer_points": [
+      {"label": "reactive has high labor and parts costs", "match_any": ["reactive maintenance has high", "high labor and parts", "reactive: high", "reactive maintenance is characterized by high"]},
+      {"label": "predictive has low labor and medium parts costs", "match_any": ["low labor", "medium parts", "predictive maintenance has relatively low"]}
+    ],
+    "expected_sources": [
+      {"document": "NIST.AMS.100-18", "pdf_pages": [15]}
+    ]
+  },
+  {
+    "question_id": "U01",
+    "question": "What lubricant viscosity should be used for a Sandisk assembly machine?",
+    "supported": false,
+    "expected_answer_points": [],
+    "expected_sources": []
+  },
+  {
+    "question_id": "U02",
+    "question": "What operating temperature should Sandisk use for its SMT placement machine?",
+    "supported": false,
+    "expected_answer_points": [],
+    "expected_sources": []
+  },
+  {
+    "question_id": "U03",
+    "question": "Which Sandisk factory equipment model has the highest failure rate?",
+    "supported": false,
+    "expected_answer_points": [],
+    "expected_sources": []
+  }
+]

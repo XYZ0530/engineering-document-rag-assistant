@@ -1,0 +1,75 @@
+[
+  {
+    "question_id": "Q01",
+    "question": "How does reactive maintenance differ from preventive maintenance?",
+    "expected_sources": [
+      {"document": "NIST.AMS.100-18", "pdf_pages": [10, 11]},
+      {"document": "NIST.AMS.100-34", "pdf_pages": [9, 14]}
+    ]
+  },
+  {
+    "question_id": "Q02",
+    "question": "Which measurable units can be used to schedule preventive maintenance?",
+    "expected_sources": [
+      {"document": "NIST.AMS.100-34", "pdf_pages": [15]}
+    ]
+  },
+  {
+    "question_id": "Q03",
+    "question": "What information is used to decide when predictive maintenance should be performed?",
+    "expected_sources": [
+      {"document": "NIST.AMS.100-34", "pdf_pages": [9, 16]},
+      {"document": "NIST.AMS.100-2", "pdf_pages": [18]}
+    ]
+  },
+  {
+    "question_id": "Q04",
+    "question": "What is a disadvantage of performing excessive preventive maintenance?",
+    "expected_sources": [
+      {"document": "NIST.AMS.100-34", "pdf_pages": [15, 16]}
+    ]
+  },
+  {
+    "question_id": "Q05",
+    "question": "What performance characteristics are near-term goals for PHM performance assessment?",
+    "expected_sources": [
+      {"document": "NIST.AMS.100-2", "pdf_pages": [33]}
+    ]
+  },
+  {
+    "question_id": "Q06",
+    "question": "What safety and maintainability benefits are associated with prognostics and health management?",
+    "expected_sources": [
+      {"document": "NIST.AMS.100-18", "pdf_pages": [17]}
+    ]
+  },
+  {
+    "question_id": "Q07",
+    "question": "What are cascading effects in direct maintenance and repair costs?",
+    "expected_sources": [
+      {"document": "NIST.AMS.100-18", "pdf_pages": [8, 25]},
+      {"document": "NIST.AMS.100-34", "pdf_pages": [22]}
+    ]
+  },
+  {
+    "question_id": "Q08",
+    "question": "How does condition-based maintenance with prognostics use health information?",
+    "expected_sources": [
+      {"document": "NIST.AMS.100-2", "pdf_pages": [16]}
+    ]
+  },
+  {
+    "question_id": "Q09",
+    "question": "Why is measuring return on investment for PHM challenging?",
+    "expected_sources": [
+      {"document": "NIST.AMS.100-2", "pdf_pages": [56]}
+    ]
+  },
+  {
+    "question_id": "Q10",
+    "question": "How do the labor and parts cost characteristics of reactive and predictive maintenance compare?",
+    "expected_sources": [
+      {"document": "NIST.AMS.100-18", "pdf_pages": [15]}
+    ]
+  }
+]

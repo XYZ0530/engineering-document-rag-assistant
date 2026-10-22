@@ -1,0 +1,10 @@
+# Observed original-machine versions on 2026-10-22; not a full lockfile.
+# CUDA torch build was installed locally; standard torch pin below may resolve differently.
+numpy==1.23.5
+pypdf==6.15.0
+pandas==2.2.2
+jupyter==1.1.1
+transformers==4.46.3
+sentence-transformers==4.1.0
+torch==2.5.1
+huggingface-hub==0.26.3
