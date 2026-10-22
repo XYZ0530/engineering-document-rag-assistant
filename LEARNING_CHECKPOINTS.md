@@ -1,7 +1,7 @@
 # Learning Checkpoints
 
 
-> Review update (2026-10-22): This is a self-directed learning prototype. See README.md and AUDIT.md for current setup, validation, and evidence provenance. Historical notebooks/results are preserved; their saved outputs are not new runs. The current grounded gate is 0.58; the four-configuration experiment and its manual answer review use historical 0.45 runs. Current source display lists all deduplicated pages supplied to the generator, not semantic attribution or claim verification.
+> Review update (2026-10-22): This is a self-directed learning prototype. See [README.md](README.md) and [Validation notes](docs/VALIDATION_NOTES.md) for current setup, validation, and evidence provenance. Historical notebooks/results are preserved; their saved outputs are not new runs. The current grounded gate is 0.58; the four-configuration experiment and its manual answer review use historical 0.45 runs. Current source display lists all deduplicated pages supplied to the generator, not semantic attribution or claim verification.
 This guide points to the exact implementation locations you should understand well enough to explain confidently in an interview. Use it beside the executed notebooks.
 
 ## PDF extraction and cleaning

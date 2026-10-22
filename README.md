@@ -302,7 +302,7 @@ Read in order for the learning path, or start with notebook 06 to follow one que
 
 Saved outputs are historical observations, not proof that a new environment works. Notebooks 01/02 regenerate data; 03/04/06/07 load models or run inference. Notebook 05 reads saved results rather than rerunning the experiment. Read first; rerun deliberately. Launch from the root or `notebooks/`, since notebook root detection assumes one of those locations.
 
-For a function-by-function study guide, see [Learning checkpoints](LEARNING_CHECKPOINTS.md). The [project plan](PROJECT_PLAN.md) and [roadmap](PROJECT_ROADMAP.md) retain the development context.
+For a function-by-function study guide, see [Learning checkpoints](LEARNING_CHECKPOINTS.md).
 
 ## Run locally
 
@@ -322,7 +322,7 @@ If PowerShell activation is restricted, call `.\.venv\Scripts\python.exe` direct
 
 The download script uses Hugging Face `snapshot_download`, documented in the [official download guide](https://huggingface.co/docs/huggingface_hub/v0.26.3/guides/download), for [MiniLM](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2) and [Qwen](https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct). It downloads PyTorch safetensors/configuration/tokenizer assets into `models/all-MiniLM-L6-v2/` and `models/qwen2.5-0.5b-instruct/`, then saves a tokenizer copy in `models/all-MiniLM-L6-v2-tokenizer/`. Internet is needed for this step. FLAN-T5 is an earlier experiment and is not needed. Downloads currently follow the model repository default revision: exact historical model revisions were not recorded, so bit-for-bit historical reproduction is not promised.
 
-The three PDFs are included in the project-only export; official download links and titles are in [SOURCES.md](SOURCES.md) if they need to be restored. Model weights and caches are excluded. The small saved embedding arrays are included so the walkthrough can use the existing evidence immediately after model setup.
+The repository includes the three PDFs; official download links and titles are in [SOURCES.md](SOURCES.md) if they need to be restored. Model weights and caches are excluded. The small saved embedding arrays are included so the walkthrough can use the existing evidence immediately after model setup.
 
 <details>
 <summary>Run a query from Python</summary>
@@ -360,7 +360,7 @@ A small offline validation after downloading models:
 python scripts/validate_project.py --models
 ```
 
-This checks existing artifacts, evaluates retrieval for both chunk designs, checks five unsupported questions, and generates one supported answer plus one gated query. It does not rerun the 52-answer experiment. [Validator source](scripts/validate_project.py) · [Checks actually run and environment caveats](AUDIT.md)
+This checks existing artifacts, evaluates retrieval for both chunk designs, checks five unsupported questions, and generates one supported answer plus one gated query. It does not rerun the 52-answer experiment. [Validator source](scripts/validate_project.py) · [Checks actually run and environment caveats](docs/VALIDATION_NOTES.md)
 
 Optional full data rebuild: these commands overwrite generated data/embeddings. Copy those artifacts elsewhere first if preserving exact originals.
 
@@ -389,6 +389,6 @@ The CLI refuses existing destinations before loading models and never overwrites
 | [data/processed/](data/processed/) | Raw/cleaned page text, extraction report and chunk corpora |
 | [data/embeddings/](data/embeddings/) | Small vector arrays and source-hash manifests |
 | [evaluation/](evaluation/) | Questions, historical generated answers and manual review |
-| [scripts/](scripts/) | Model download, validation and project-only export utilities |
+| [scripts/](scripts/) | Model download and validation utilities |
 
-See [AUDIT.md](AUDIT.md) for checks actually run and [GITHUB_UPLOAD.md](GITHUB_UPLOAD.md) for exact upload steps. Do not initialize Git in this working project while its parent repository boundary remains unresolved. The export script creates a separate allowlisted project-only copy, redacts local username paths in copied notebook outputs, normalizes copied manifests, and preserves original evidence here. No remote repository, commit, or publication is created by any preparation script.
+See [Validation notes](docs/VALIDATION_NOTES.md) for checks actually run, their dates, environment caveats and remaining reproducibility limitations.
